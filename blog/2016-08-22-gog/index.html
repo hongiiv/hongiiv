@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Changbum Hong</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+<header class="row text-center header">
+   <img src="/img/hongiiv2.png" alt="Author Image" class="img-circle text-center headshot"> 
+  <h1 class="author">Changbum Hong</h1>
+</header>
+
+<section id="info-pane" class="row text-center info">
+  
+  <h3 class="intro">Software engineer for cancer research  Seoul, Korea.</h3>
+  
+  
+  <h4 class="description">Cancer data science, clinical bioinformatics, DNA variation, precision oncology</h4>
+  
+</section>
+
+<section id="social-pane" class="row text-center social">
+  
+  <a href="https://twitter.com/hongiiv" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  <a href="https://facebook.com/hongiiv" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://github.com/hongiiv" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://instagram.com/hongiiv" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/hongiiv" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="mailto:hongiiv@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  
+  
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Changbum Hong",
+  "url": "",
+  "sameAs": [
+    "https://twitter.com/hongiiv",
+    
+    
+    
+    "https://facebook.com/hongiiv",
+    "https://github.com/hongiiv",
+    "https://instagram.com/hongiiv",
+    "https://linkedin.com/in/hongiiv",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,
+    ""
+  ]
+}
+</script>
+
+
+
+<header class="row text-left title">
+  <div align='center'><h3 class="title">Game of Genomes 번역</h3></div>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta tcenter">
+        PUBLISHED ON MAY 7, 2019 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h2 id="에피소드-1-하드-드라이브속의-남자">에피소드 1: 하드 드라이브속의 남자</h2>
+
+<p>그 과학자는 동료들에게 나를 가르키며 “이건 칼 짐머(Carl Zimmer)가 아니야”라고 말했다. 그 과학자는 마크 거스테인(Mark Gerstein)으로 예일대의 자신의 사무실에서 연구실의 두 동료 옆에 앉으며 말했다. “정말이야” 그는 테이블위의 슬림 하드 드라이브를 가르키며 “이게 칼 짐머야”라고 말했다. 그가 가르키는 것은 하드 드라이브로부터 맥북으로 데이터가 이동중인 내 지놈 시퀀스였다. “농담이 아니야 난 아주 심각해” 거스타인이 말했다. “5분 후면 그는 이 컴퓨터 안으로 들어올 거야”</p>
+
+<p>나는 예일대에서 거스타인과 그의 동료들에게 내 지놈을 탐험해 달라고 했다. 난 그 안에 뭐가 있는지 그들이 찾아 줄 것을 원했다.</p>
+
+<p>난 기존의 의사들이 하는 유전자 검사나 계보회사에 침을 보내는 수행하는 검사는 개인의 DNA의 1%도 안되는 지놈의 시퀀스를 제공하는 것으로 난 이런 검사대신 더욱 흥미진진한 나의 전체 지놈을 시퀀싱하고 원시 데이터도 얻었다. 과학자들은 이정보를 통해 어떻게 사람들의 유전자가 사람을 만드는지에 대한 이해를 하게 된다.</p>
+
+<p>당신이 거스타인의 맥북으로 흘러 들어가는 데이터를 본다면 지옥의 엑셀을 볼 수 있을 것이다. 엑셀의 각 열은 A, C, G, T 문자열 몇 백개가 다양한 조합으로 약 12억개의 열이 존재한다. 거스타인의 컴퓨터로 흘러 들어가는 나의 지놈을 보면서 난 약간의 흥분을 느꼈다. 내가 1990년대 DNA 시퀀싱에 대해서 글을 쓰기 시작할 때 인간 지놈을 시퀀싱하는 것은 화성 유인 탐사보다 쉬워보였다. 2001년 첫 번째 인간 지놈 시퀀스를 조립하기 위해 수백명의 과학자와 3억달러가 소요되었다. 그 후 DNA  시퀀싱 가격이 하락하고 정확도는 좋아졌다. 이제 과학자들은 약 15만명의 사람들의 지놈 시퀀싱을 수행하였다.</p>
+
+<p>이러한 폭발적인 시퀀싱에도 불구하고 매우 소수의 사람들만의 자신의 지놈 시퀀싱을 가지고 있으며 그들중 제대로된 리포트를 가진 사람들은 소수에 불과하다. 내가 알기로 자신의 원시 데이터를 가지고 그것을 관리하는 사람은 전례가 없는 것으로 알고 있고 저널리스트로서는 처음이라고 말할 수 있다.</p>
+
+<p>나는 지난 몇 달 동안 거스타인과 다른 과학자들의 도움의 받아 나의 지놈에 무엇이 숨어있는지에 대해 알아보았다. 스쿠버다이빙으로 해저 협곡을 가이드 하듯이 그들은 전문지식과 시간을 아낌없이 투자했다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep1_Scuba-1024x576.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>이번 경험은 나 자신에게 많은 것을 일깨워 주었을 뿐만 아니라 더 중요한 것은 일반적으로 유전체 및 발전에 대해 과학자들은 이해하고 있다는 것이다.</p>
+
+<p>나는 무엇을 배웠는가? 난 인류가 탄생하기 전 백만년으로 돌아가기 위해 나의 지놈을 사용했다. 나는 정확히 네안데르탈인으로부터 물려받은 내 DNA 조각에서 나의 건강에 영향을 미칠수 있는 것을 발견했다.</p>
+
+<p>나는 내 유전자의 여분이 복사본이 있고 다른 사람에 비해 상당히 부분이 빠져있다는 것을 배웠다. 나는 돌연변이변이들이 질병에 대해서 취약하게 만드는지 단백질의 일부분을 3차원 구조를 확인했다.</p>
+
+<p>어쩌면 중요한 것은 전문가들이 사람의 지놈을 이해하는 것이 얼마나 열심인지 배웠다. 앞으로 몇일동안 내가 배운 내용에 대해서 시리즈로 나올 것이다. 또한 우리의 DNA에 대해 놀라운 연구를 하는 전문가들에 대해서 소개할 것이다.</p>
+
+<p>당신이 관심이 있다면 매 시즌이 나올때마다 이메일을 수신하기 위해 가입을 할 수 있다. 난 당신이 함께 그 하드 드라이브에 무엇이 숨어있는지를 볼 수 있기를 바란다.</p>
+
+<h2 id="에피소드-2-깨어진-코드">에피소드 2: 깨어진 코드</h2>
+
+<p>내 염기서열을 시퀀싱 하기로 결정한 후 난 보스턴의 한병원에서 유심의 나의 얼굴을 보고 있는 유전학자와 함께 있는 나를 발견했다.</p>
+
+<p>“전 지금 유전병에서 나타나는 얼굴의 특징을 찾고 있는 거에요” 브리검여성병원(Brgham and women’s hospital)의 로버트 그린이 말했다. “눈의 모양, 귀가 너무 낮게 있지는 않은지. 귀가 복잡하게 생기진 않았는지” 그린박사는 사무실을 앞뒤로 걸어보도록 했다. 나는 웨스트민스터 도그쇼의 테리어 같다는 느낌이 들었다. 몇몇 유전병은 걸음걸이에 숨겨져 있다고 그린이 설명했다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep2_dogshow-1024x576.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>“향후 임상에서는 조심해서 판단할 필요가 없을거에요” 그가 나의 얼굴을 보며 말했다. “그러나 홀 지놈 시퀀싱을 어떻게 해야 하는지에 대한 표준이 없습니다. 그래서 내가 그것을 하기로 결정했습니다.”</p>
+
+<p>난 전에 유전학자를 직접 대면한 적이 없다.  우리 인류의 역사상 우리가 우리의 DNA를 모두 볼 수 있는 기회를 가진적이 없다. 여전히 과학자들은 우리의 지놈이 건강에 미치는 영학을 파악하고 있다. 그리고 그린박사와 같은 의사들은 치료에 지놈을 사용하기 위한 규칙을 만들려고 노력하고 있다.</p>
+
+<p>그린 박사를 찾아오기 한달 전 DNA 시퀀싱 장비를 만드는 선도적 기업인 일루미나의 교육 프로그램의 일환으로 나를 초대했다. 우리는 시험을 위해 채혈을 했고 지금 의심스러운 그 무엇도 찾지 못했다. 나의 혈액은 보스턴에서 샌디에고로 보내졌고 일루미나에서 시퀀싱 되었다. 일루미나에서 후원하는 세미나에 등록했고 등록비는 3,100달러였다.</p>
+
+<p>일루미나 팀은 나의 혈액 세포를 부수고 그 안에서 DNA를 추출하기 시작했다. 그들은 DNA의 한쪽 끝에서 다른쪽까지 읽을 수가 없다. 초기 인간 지놈은 너무 길고 컸다. DNA를 조각 내어야만 했다.</p>
+
+<p>대신 일루미나는 직관에 어긋나는 방법을 선택했다. DNA를 많은 조각을 만들고, 그 조각들에 대해서 복사를 수행한 다음 그것들을 읽어서 다시 합치는 것이다.</p>
+
+<p>그렇게 함으로써 자신의 카피를 만들어내는 능력을 활용했다. 각 DNA분자는 베이스라는 한쌍의 가닥이다. 베이스는 우리의 유전자가 기록되는 알파벳이다. 우리가 사용하는 26개의 알파벳 대신 A(아데닌), T(티민), C(시토신), G(구아닌) 네 개의 DNA 염기 종류가 있다.</p>
+
+<p>세포가 분열할 때 그들은 DNA의 새로운 복사본을 만들어 낸다. 그들은 두 개의 가닥으로 된 분자를 분리하고 새로운 가닥을 만들어 낸다. 이러한 과정은 매우 간단하다. 각 베이스는 A는 T, C는 G로 다른 베이스와 짝을 이룬다. 나의 DNA를 읽기 위해서 일루미나는 이러한 화학 반응을 모방했다.</p>
+
+<p>첫 번째로 일루미나 팀은 나의 DNA를 각 340 베이스 정도의 짧은 조각을 내었다. 그런다음 그들은 추가의 복사본을 만든 다음 여러번 반복해서 각각을 시퀀싱했다. 그렇게 하기 위해 욕조 같은것에 담긴 플레이트에 조각들을 접착시킨다.</p>
+
+<p>욕종서 베이스들은 자유롭게 움직이다가 해당하는 조각을 만들기 위해 고정시킨다. 각 조각들은 Illumina의 장비에 의해 반응을 기록할수 있다. 컴퓨터는 이러한 반응을 기록하고 원래 가닥 각각의 서열을 해독하는데 사용한다.</p>
+
+<p>일루미나의 연구팀이 폐암과 같이 익숙한 것들부터 체루비즘(cherubism, 가족성섬유성이형성증, 천사 얼굴증)과 같이 낮설은 은것까지 1,200개에 달하는 질환에 대한 위험도를 평가했다. (속지마세요. 체루비즘은 당신의 얼굴을 천사처럼 보이게 하지 않습니다. 단지 낭종으로 턱을 채웁니다.)</p>
+
+<p>50번째 생일에 가까워진 지금 난 꽤 건강하고 행운아라고 느끼지만 이후 몇 십년에 대해서 궁금하다. 내 아버지쪽은 할아버지가 심장마비로 40대에 사망하셨고 할머니는 암으로 사망하셨다. 내 어머니 가족은 운이 좋았다. 외할아버지는 88세까지 사셨고 외할머니는 지난 여름 90세 생일 축하를 했다. 난 내 유전적 로또가 궁금해졌다.</p>
+
+<p>몇주 후 브리검여성병원에 방문 쉴라 수띠로부터 전화를 받았다. 그녀는 그린박사와 같이 일하는 유전 상담사였다. 그녀는 일루미나로부터 받은 나의 결과를 가지고 있었다. “전화를 말씀드린바와 같이 임상적으로 중요한 어떠한 것도 찾지 못했어요. 칼 당신은 매우 양호합니다.” 그녀가 말했다.</p>
+
+<p>일루미나는 내가 특정 약물에 대해서 잘 반응하지 못할 수 있지만 유전질환을 가지고 있다는 확실한 증거를 찾지 못했다. 두가지 질벼에 대해서 내 아내가 돌연변이를 가진 경우 내 아이를 아프게 만들 수 있는 캐리어(보인) 돌연변이 복사본을 가지고 있다는 것을 발견했다. 내 아이들은 어리기 떄문에 그 돌연변이에 대해서 내 가족이 걱정할 필요가 없다는 것을 알고 있다. 그건 어릴 때 나타나는 것이기 때문에 우리 가족은 지금 그것에 대해 걱정할 필요가 없다.</p>
+
+<p>그리고 그게 다였다.</p>
+
+<p>더 이상 끔찍한 내용이 없었고 나는 안도 하는 순간 이 모든 경험이 나의 지놈이 지루하다고 느껴졌다. 그러나 잘못이라는 것을 안다. 모든 인간의 지놈은 그것을 깊게 보면 볼수록 무한한 매력이 있다는 것을 알고 있다. 내 지놈 시퀀싱 전에 나는 실망할 것을 미리 알았다. 몇 년전 나는 UCSC의 유전학자 부부인 베샤 샤피로(Beth Sapiro)와 에드 그린 (Ed Green)과 점심 식사를 했다.</p>
+
+<p>“당신이 언젠가 뭘 해야 하는지 알아요? 바로 지놈 시퀀싱입니다.” 샤피로가 단언했다. “그러나 뭘해야하는지 알아요? 바로 당신의 BAM 파일을 받아야 합니다. 그런다음 우리와 같은 과학자들에게 가지고 와야해요. 그럼 당신은 정말 무슨 일이 일어나고 있는지 볼 수 있어요”</p>
+
+<p>나는 내가 BAM 파일이 뭔지도 모르는 것을 인정할 용기가 없었다. 그러나 몇 년이 흐른 지금 그것을 찾을 때가 되었다.</p>
+
+<h2 id="에피소드-3-bam-모든-것을-드러내다">에피소드 3: BAM 모든 것을 드러내다</h2>
+
+<p>내가 배운바로는 BAM 파일은 지놈 시퀀싱을 한 결과로 나오는 원시 데이터다. (BAM은 이진 정렬/맵을 의미한다.) 이것은 장편영화 400 분량의 70기가바이트에 달하는 엄청난 정보 덩어리다. 지놈의 전체 복잡성을 탐구하는 과학자가 아니라면 엄두를 못낸다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep3_harddrive-1024x576.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>당신이 당신의 BAM 파일을 얻는 것은 의외로 어려울 수 있다. 나의 지놈이 일루미나에서 시퀀싱 되었을 때 임상리포트와 함께 그것을 읽을 수 있는 웹사이트 링크를 보냈다.</p>
+
+<p>BAM 파일을 인도받는 것은 간단하지 않았다. 일루미나는 전적으로 임상연구에 사용한다면 제공한다고 서류에 말하고 있다. 일루미나와 같은 회사가 대중에게 BAM 파일을 건네는 것은 놀라운 일은 아니다. 2007년 유전자검사 회사인 23앤드미는 고객들을 대상으로 직접 유전자 검사를 제공하기 시작했다. 고객들은 수백에서 수천개의 유전자 변이와 그것들이 다양한 질병에서 얼마나 위험한지를 추정한 결과를 해석하여 제공했다. 2014년 FDA는 검증되지 않았다는 이유로 판매 중단을 요구했다.</p>
+
+<p>23앤드미의 검사는 지놈 전체에 걸친 수십만개의 유전자 마커만을 사용했다. 반면 BAM 파일은 30억 염기쌍에 대한 모든 정보가 포함되어 있다. 무엇보다도 윈시 데이터는 오류가 포함되어 있기에 전문가가 필요하며 직접 고객에게 전달할 경우 무서운 재앙이 될 수 있다. 고객이 자기 스스로 해석하고 진단할 있기 때문이다. 이러한 주의사항들은 진정 이것을 원하는 사람들도 어려운 부분이다. 심지어 전문가들도 아무것도 할 수 없는 상황이다.</p>
+
+<p>코넬대학의 대학원생인 Brad Gulko는 새로운 지놈분석 방법에 대해서 연구를 하고 있다. 몇 년간 그는 자신의 지놈 시퀀싱을 위해 돈을 조금씩 모았다. 그는 그 자신의 BAM 파일을 가지고 연구해보고 싶었다.</p>
+
+<p>“내 손으로 많은 분석을 하고 있죠” 그가 말했다. “ 나는 내가 어떤지 보고 싶었습니다.”</p>
+
+<p>Gulko는 DNA 시퀀싱 가격 하락과 자신의 저축이 늘어나기를 기다렸다. 작년에 딱 좋은 시기였다. 작년 7월 그는 그의 지놈을 시퀀싱을 위해 시퀀싱 센터에 연락했다.</p>
+
+<p>그는 그의 BAM 파일을 얻기 위해서는 연구에 등록하고 IRB도 받아야한다는 것을 알아냈다. 하지만 아무리해도 Gulko는 그것들을 통고하지 못했다. 그는 여천히 그의 지놈에 접근할 수 없는 지놈 전문가로 남아있다.</p>
+
+<p>“그건 얻을 수 있지만 얻을 수 없다” Gulko가 나에게 말했다. “내가 나에 대해서 알수가 없다.”</p>
+
+<p>Gulko와 같은 과학자조차 자신을 지놈을 얻을 수 없다면 나 같은 일반인들은 어떨까? 도움을 받기 위해 지난번 나의 지놈을 봐주었던 브링험여성병원의 로버트 그린에게 돌아갔다. 그는 해결방법을 가지고 있다. 그것은 좀 투박한 과정이죠“ 그가 경고했다.</p>
+
+<p>그린 박사는 환자 치료뿐만 아니라 지놈 시퀀싱이 약에 미치는 영향에 대한 연구를 진행하고 있다. 현재 그린 박사가 진행하고 있는 연구중 하나는 PeopleSeq으로 사람들이 자신의 지놈 서열을 얻은 후의 어떻게 반응하는지에 연구이다.</p>
+
+<p>대부분의 사람들은 그들의 의사로부터 필터된 지놈에 대한 정보를 얻고 있다. 그러나 그린 박사는 최근 자신의 연구를 참여자기 그들의 손에 BAM 파일이 들어있는 하드 드라이브를 손에 쥘 수 있도록 확장하고 있다.</p>
+
+<p>“우리는 하드 드라이브를 반환하는 프로토콜을 만들었습니다. 하지만 그것을 한번도 한적이 없죠” 그는 나에게 이메일을 보냈다. “당신이 첫 번째가 될 거에요.”</p>
+
+<p>나는 PeopleSeq 연구에 참여하고 그린 박사는 일루미나에 BAM 파일에 대해서 질의했다. 그들은 또한 내 임상보고서를 생성하는데 사용했던 품질 검사를 시행하지 않은 데이터라는 것을 이해하라는 것에 서명했다.</p>
+
+<p>그린 박사와 나는 8월에 해당 계획에 대해서 이야기 했다. 여름가 가을이 지나고 마지막으로 1월 중순 UPS 상자가 집으로 도착했다. 내부는 뽁뽁이로 채워졌고 안에는 검은색 직물 케이스가 있었다. 케이스를 여는 순간 내부는 반짝 빛나는 금속 재질의 하드드라이브를 발견했다. 과정은 투박했지만 그것은 실제로 작동했다. 나는 내 BAM 파일을 과학자에게 보여줄 준비가 되었다.</p>
+
+<p>나의 첫 번째 탐험은 캠브리지의 브로드 연구소에서 일하는 콘라드(Konrad Karczewski)라는 과학자였다. 나는 단순히 이메일로 BAM 파일을 그에게 보내기에는 너무 거대하다는 것을 깨달았다. 가장 쉬운 방법은 직ㅈ버 찾아가는 것이다. 난 내 손으로 나의 지놈을 배송하기로 했다. 나는 다시 콩 모양의 케이스에 하드드라이브를 넣고 가방을 챙겨 보스턴 기차에 몸을 실었다. 난 나 자신의 지놈을 배송하는 개인 택배기사가 되었다.</p>
+
+<h2 id="에피소드-4-로제타-스톤">에피소드 4: 로제타 스톤</h2>
+
+<p>화창한 날씨의 브로드 연구소의 젊은 생물정보학 전문가는 자신의 노트북에 표시된 내 지놈을 재현한 방법을 나에게 보여주기 위해 다이어그램을 그렸다. 전체 프로세스는 2주면 완료됩니다. 콘라드가 말했다.</p>
+
+<p>DNA 시퀀싱은 뉴스나 경찰25시에서 친숙하게 등장하지만 사실 과학자들은 아직 여전히 텍스트를 정교하게 조립하는 방법에 대해 공부하고 있다. 만약 지놈이 책이라면 그것은 신비한 상형 문자로 작성되어 있고 과학자들은 여전히 로체타 스톤을 읽기 위해 노력하고 있다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep4_laptop-1024x576.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>“생물학은 복잡합니다.” 콘라드가 나에게 말했다. “우리는 이미 알고 있지만 난 정말 일을 시작할때까지 얼마큼인지 생각지도 못했습니다.”</p>
+
+<p>일루미나는 실제 내 DNA의 12억 조각을 순서를 읽어 시퀀싱을 합니다. 이 단계에서 이러한 조각(read라고 함) 지루한 직소 퍼즐 맞추기와 같다. 이 퍼즐은 좀 더 도전적이고 그 조각 중 일부는 나쁜 화학 반응에 따른 실수를 포함하고 있다.</p>
+
+<p>직소 퍼즐을 맞추기 위해 우리는 각 부분과 일치하는 조각을 찾기 위해 상자에 그려진 그림을 참조할수 있다. 콘라드와 같은 과학자들은 휴먼 레퍼런스 지놈이라는 퍼즐 상자를 가지고 있다. 이것은 고정밀의 한 사람의 유전 물질로 모든 사람들은 비교적 유사한 DNA를 가지고 있기에 각 read의 위치를 파악하기 위해 러퍼런스 지놈을 사용한다. 그러나 read들은 너무 짧고 레퍼런스는 너무 길기 때문에 콘라드는 무차별 검색을 통한 매칭을 원하지 않았다.그것은 아마 100년이 걸릴 것이다. 대신 일부 영리한 단축키를 활용하여 30시간이면 대부분의 read들이 속한 위치를 알아낼 수 있다.</p>
+
+<p>그다음으로 콘라드는 read들에서 오류를 제거했다. 그는 일루미나가 많은 read들이 나의 지놈을 겹쳐서 여러번 읽는다는 사실을 이용했다. 당신이 나의 지놈을 지놈 지도에서 본다면 레퍼런스 아래에 불규칙한 벽돌을 보는 것과 유사할 것이다. 일루미나는 각 베이스마다 평군 30번정도 매칭된다. 중복을 통해 DNA시퀀싱의 오류를 발견할 수 있다. 하나의 지점에서 30번이 모두 T라면 해당 지점은 내 지놈상에서 T라고 결론 내릴 수 있다.</p>
+
+<p>이러한 과정을 통해 지놈 서열에서 많은 오류를 해결할 수 있지만 그렇지 않은 경우도 많다. 이 단계에서 지놈을 스캔한 결과 일부 read는 A, 일부는 C, T, G인 경우이다. 그것들은 정확한 베이스가 어떠한 것이지에 대한 어떤 단서도 제공하지 않는다.</p>
+
+<p>This kind of error can be caused by a mutation that chops out a large piece of DNA, or one that accidentally duplicates it. They confuse computer programs that try to match reads to the human reference genome; the programs end up pinning the reads to the wrong place.</p>
+
+<p>Fortunately, scientists have recently written a number of programs that can spot places where insertions and deletions create this confusion. But it’s no small task to fix these errors — Karczewski needed 15 hours to identify insertions and deletions in my own genome.</p>
+
+<p>Only after two weeks of this scrubbing and fixing did Karczewski finally allow the Broad’s servers to write out my genome sequence. I was then able to give other scientists access to this new and improved version of my genome, so that they could explore it.</p>
+
+<p>I came back to the Broad when Karczewski had finished, to inspect his handiwork. To show me my genome, Karczewski opened a special kind of browser. Think of it as Google Chrome for DNA. It displayed my genome as a string of bases arrayed on a line that ran off of either side of the screen. The browser highlighted stretches of DNA in genes; Karczewski could zero in on any one of them for a close inspection.</p>
+
+<p>To give me a sense of how good his reconstruction of my genome was, Karczewski navigated to a gene called HTT.</p>
+
+<p>HTT는 그냥 유전자가 아닙니다. HTT의 특정 돌연변이는 헌팅턴병을 일으키며 중년에 시작하여 치매로 연결되고 죽음으로 끝나는 치명적인 질병이다. 안타깝게도 이러한 돌연변이는 표준 지놈 시퀀싱 기술로 인식하기란 매우 어렵다. C, A, G로 구성된 반복 염기로 건강한 사람은 다양한 CAG 반복이 존재한다. 사람들이 37 또는 그 이상의 CAG 반복이 존재한다면 헌팅턴병 발병 위험이 있다. DNA 반복은 그들을 고정할 수 있는 특유의 서열이 없기 때문에 짧은 read들을 가지고 정확하게 일치시키기가 매우 어렵다.</p>
+
+<p>내가 일루미나로 내 지놈을 시퀀싱한 것으로는 온전히 HTT 유전자를 재구성할 수가 없었다. Rather than make a bad guess, it simply left parts of it blank. When it used my genome to identify my risk for genetic disorders, it didn’t even try to determine if I would develop Huntington’s disease.
+하지만 지금은 콘라드 덕분에 나의 HTT 유전자를 보고 있다. 내가 원한다면 그냥 앞으로 숙여서 CAG 반복을 세기만 하면 된다.</p>
+
+<p>“당신도 아시다시피, 우리가 이걸 하기전에 유전자 카운슬링을 받아아 합니다.” 콘라드가 말했다.</p>
+
+<p>이러한 것들은 자신의 손으로 당신의 지놈을 다룰 때 직면하는 위험이다. 그럼에도 불구하고 나는 빨리 생명윤리를 생각해 보았다.</p>
+
+<p>It takes just one defective copy of HTT to cause Huntington’s disease. But none of my ancestors I knew of suffered from the disorder, making it unlikely they could pass it down to me. Yet I also knew that about 10 percent of cases of Huntington’s disease occur out of the blue, the result of a new mutation that adds a number of CAG repeats to a person’s HTT gene. But such events are very rare.</p>
+
+<p>나는 정상의 HTT 유전자를 가지고 있을 것이라고 확신했다. 하지만 가지고 있다면, 난 기다리는 것이 더욱  끔찍하다는 것을 알고 있었다.</p>
+
+<p>“자 봅시다” 내가 말했다. 그리고는 우리는 살펴보기 시작했다.</p>
+
+<p>레퍼런스 지놈은 CAG가 19회 반복이 존재한다. 우리는 총 17번을 세었다. 콘라드의 재구성이 정확하다면 나는 헌팅턴 질병에 대해 걱정할 필요가 없다.</p>
+
+<p>홀 지놈 시퀀싱이 아직 헌팅턴 질병과 같은 특정 질환에 대해 신뢰할 수 있을 정도의 의료용 검사의 역할을 충분히 하고 있지는 않다.</p>
+
+<p>People who have relatives with Huntington’s and want to see if they carry the mutation should get precise tests that determine only the sequence of HTT, ignoring the rest of the genome.</p>
+
+<p>But just because whole-genome sequencing isn’t 100 percent accurate doesn’t mean it’s not valuable. Thanks to the careful assembly by Karczewski and other scientists, I at last had a reconstruction of my genome that I could explore</p>
+
+<h2 id="에피소드-5-z를-해부하다">에피소드 5: Z를 해부하다</h2>
+
+<p>난 얼마전 갔었던 예일 대학의 회의실로 걸어갔다. 8명의 대학원생과 박사후 연구원이 긴 테이블의 양쪽에 앉아 날 기다리고 있었다. 그들은 맨 앞자리에 나를 앉혔다. 내 앞에는 거대한 모니터에는 “Z의 개요”라고 씌어진 것을 읽을 수 있었다.</p>
+
+<p>2주동안 그 연구원들은 나의 지놈을 자세히 살펴보았고 바로 지금 나와 함께 그들이 발견한 것을 공유할 준비가 된 것이다. 그들이 나를 위해 매우 열정적이었고 나는 그것에 대해 고맙지만 한편으로는 의아했지만 곧 이내 답을 찾았다. 그들에게 나는 Z였을 뿐이었다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep5_froggy.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>그것은 마치 해부학 수업의 개구리와 같았다.</p>
+
+<p>그들은 예일대의 마크 거스타인 연구실에 같이 일하는 학생들이었다. 난 거스타인에게 나의 지놈을 살펴봐달라고 물어봤다. 그는 수천명의 인간 지놈을 연구한 경력이 있었기 때문이다. 그와 그의 동료들은 지놈 카탈로그를 만드는데에는 전문가들 이었다. 내 프로젝트에 대해서 거스타인에게 문의했을 때 그는 그의 지놈을 이런식으로 살펴본 적이 없다고 했다.</p>
+
+<p>“난 이 이 작업을 수행할 용기가 없었습니다. 난 소심해요” 거스타인이 인정했다. “걱정이 있습니다. 매 시간 새로운 발견의 연속이었습니다.”</p>
+
+<p>거스타인은 자신의 지놈을 보는 것처럼 긴장되 보였다. 그는 나를 보면서 대리인삼아 즐거워 보였다. 내가 나의 지놈 원시 데이터를 하드 드라이브로 그에게 전해줄 때 “정말 이걸 하기 원하나” 그가 말했다. “난 이게 미래라고 생각해요”</p>
+
+<p>거스타인은 자신의 컴퓨터에 데이터를 전송하고는 다시 나에게 하드 디스크를 건냈다. 콘라드처럼 거스타인과 그의 팀은 내 BAM 파일을 컴퓨터 프로그램 세트를 사용하여 나의 지놈을 재구성했다. 그들이 나의 DNA 순서를 재구성한 후 각 부분을 식별을 시작할 수 있었다.</p>
+
+<p>각 부분은 바로 우리가 잘 알고 있는 유전자이다. 단백질은 우리의 몸을 구성(콜라겐은 우리의 피부와 아이오신은 우리의 근육을 구성)하고 그것은 유전자에 의해 부호화 되어있다. Our 20,000 or so protein-coding genes take up only about 1 percent of our genome, however. They are scattered amid vast stretches of so-called non-coding DNA. Non-coding DNA is a mishmash of different elements. Some of them, like on-off switches for genes, are essential to our well-being. A lot of them are just along for the ride.</p>
+
+<p>In order to map the parts of my genome, Gerstein and his colleagues took advantage of the fact that one person’s genome is pretty similar to anyone else’s. If you want to find your COL1A1 gene for collagen, for example, you’d best look about midway down your chromosome 17. That’s where it is in everyone else.</p>
+
+<p>But while my genome is a lot like everyone else’s, it’s not identical. When a scientist like Gerstein sets out to catalog a genome, a lot of his work goes into tallying up my differences.</p>
+
+<p>내가 Z로 거스타인 연구실에 되돌아 왔을 때, 수염을 기른 브라질의 박사후 연구원인 파비오 나바로(Fabio Navarro)는 큰 숫자에 나를 대입하기 시작했다. 그것은 나의 지놈이 레퍼런스 지놈에 대해서 하나의 베이스가 다른 것(단일염기다형성, 줄여서 SNP)들이 얼마나 있는지에 대한 것이었다.</p>
+
+<p>예를 들어 나는 MEFV라는 유전자에 SNPs를 가지고 있다. 그 유전자는 사람들이 대부분 티민(thymine)을 가지고 있다. 그러나 유전자내의 내 복사본 중 하나는 사이토신(cytosine)을 가지고 있었다. 이 변이는 가족성 지중해열(Familial Mediterranean fever)이라는 질환의 보인자(실제로 질병을 얻기 위해서는 두 개의 복사본이 필요)이다.</p>
+
+<p>It was a struggle for me to think clearly about the 3,559,136 other SNPs in my genome. I was tempted to think of them as making me an exquisitely unique genetic snowflake.</p>
+
+<p>거스타인과 함께 일하는 수산트 쿠마(Sushant Kumar)라는 다른 박사후 연구원 dispelled that illusion by picking out two people from a database of genomes to compare me to. One was a person from China, the other from Nigeria. Kumar found all three of us shared a lot of SNPs in common — 1.4 million, in fact. Kumar and his colleagues cut down my uniqueness even more by searching for my SNPs in a database they helped build, called the 1000 Genomes Project. They found over 91 percent of my SNPs in at least one other person’s DNA.</p>
+
+<p>This enormous genetic overlap is the result of humanity’s sloshing global gene pool. Every new baby gains a few dozen new SNPs. They can pass on some of those SNPs to their own children. Over thousands of years, the variants spread from continent to continent.</p>
+
+<p>거스타인과 다른 과학자들은 이러한 SNP가 우리 몸에 미치는 영향을 이해하고 싶어한다. 지금은 이러한 변이는 대부분 단백질 코딩 유전자에 국한된다. 이러한 유전자는 단지 우리 지놈의 1%밖에는 되지 않는다.</p>
+
+<p>나는 나의 키를 좀 더 크게 하는 HMGA2라고 불리는 유전자 변이를 가지고 있다. 평균적으로 나와 같은 변이를 가진 사람은 변이를 가지지 않은 다른 사람들보다 1/4인치 더 크다. 그러나 과학자들은 나와 같은 사람들이 성장을 향상시키는지에 대한 정확한 방법을 모른다.</p>
+
+<p>It’s likely that variants like the one in my HMGA2 gene influence my biology by changing the shape of my proteins. When proteins change shape, they work differently. 내가 거스타인 팀을 방문하는 동안 대학원생중 한명니 클란 클라크(Declan Clarke) 놀라운 데모를 보여주었다. 그는 나에게 나의 돌연변이 단백질의 형상을 보여주었다.</p>
+
+<p>나의 돌연변이는 간에서의 효소의 모양을 변경했다. 우리의 간은 잠재적으로 유해한 분자를 분해하여 우리의 혈액이 깨끗하도록 유지한다. 이러한 효소중 하나인 NAT2는 유사한 분자 구조로 카페인 및 다른 독소의 분해를 돕는다.</p>
+
+<p>난 효소의 모양을 변화시키는 NAT2 유전자의 변이를 가지고 있다. Clarke showed me how a pocket on my enzyme has an odd bulge. That bulge changes the way my NAT2 enzymes behave. In most other people, that pocket repels water molecules. In mine, it attracts them.</p>
+
+<p>그 결과 나의 NAT2 효소는 천천히 작동한다.allowing toxins to build up and linger longer in my body. Making matters worse, my defective pocket raises the risk that NAT2 enzymes will stick to each other, or to other proteins. To protect me from this damage, my cells destroy a lot of my NAT2 enzymes.</p>
+
+<p>“당신이 오래된 차를 타고 도로를 주행하고 있다고 가정해 봅시다.” 클라크가 말했다. “It’s like the other proteins are saying, ‘We have to impound this thing.’”</p>
+
+<p>While getting rid of a lot of my NAT2 enzymes may reduce my risk of dangerous clumping, it also leaves me with even fewer of them. As a result, I end up doing an even worse job at breaking down certain toxins. And it’s not just toxins that can pose a problem: NAT2 helps break down certain medicines, too. Geneticists have found that my variant puts people at risk of bad side effects from those drugs.</p>
+
+<p>While some mutations alter proteins, others destroy them. They disrupt genes so badly that our cells can’t use them to make any functional proteins at all.
+A broken gene (technically known as a loss-of-function variant) can be a very dangerous thing. If you don’t have a functional F8 gene, for example, you can’t make an essential clotting protein. You get hemophilia and can bleed to death from a little cut.
+In my own genome, Gerstein and his colleagues discovered 13 genes in which both copies appear to be broken. I have another 42 genes in which only one copy looks like it’s defunct.
+It may sound strange that my genome has dozens of broken genes that cause me no apparent harm. If it’s any consolation, I’m no freak. The 1000 Genomes Project revealed that everyone has a few dozen broken genes.</p>
+
+<p>Our genomes are not finely engineered machines that can’t tolerate a single broken flywheel or gear shaft. They’re sloppy products of evolution that usually manage to work pretty well despite being riddled with mutations.</p>
+
+<p>I’ve probably passed down some of my uniquely broken genes to my children. Perhaps, long in the future, one of those broken genes will become more common in humans, and end up in every member of our species. That’s certainly happened in the past. My genome catalog includes about 14,000 genes that have been broken for thousands or millions of years, known as pseudogenes. Once they lost the ability to make proteins, they simply became extra baggage carried down from one generation to the next. Thanks to a genetic roll of the dice, they ended up becoming common. Now these 14,000 pseudogenes are found in all humans today.</p>
+
+<p>“It’s neat — this is evolution in process,” Gerstein said. The unbroken continuum from my own broken genes to humanity’s shared pseudogenes is testament to the long, error-filled journey that produced our complicated, baffling genomes today.</p>
+
+<p>I left my Individual Z Overview with a sense of how SNPs can change my proteins, and thus change my biology. But now that I had an assembled, catalogued genome, I knew that there was still a lot more to explore. There were pieces of non-coding DNA in my genome that influence my health. There were huge pieces of DNA that have vanished from my genome. I could even discover mutations that protect me from diseases. To join me on this next stage of the adventure, come back for the next installment.</p>
+
+<h2 id="에피소드-6-황무지의-제다이">에피소드 6: 황무지의 제다이</h2>
+
+<p>최근 보스턴 여행에서 난 Manolis Kellis라는 과학자와 아침식사를 했다. 그와 내가 묵고 있는 호텔의 작은 식당에서 음식과 플레이트르 잡았다. 켈리스는 와플 틀에 매료되었다. 그는 와플틀에 반죽을 붓기 시작했다.</p>
+
+<p>“다 먹게 좀 도와줘요.” Kellis가 자리에 앉으며 말했다. 그는 엑센트가 있는 어투로 말했다. 그는 그리스에서 태어났고 Manolis Kamvysselis라고 불린다.1995년 MIT에 오기 위해 미국으로 와서 돌아가지 않았고 그는 MIT의 와플을 사랑하는 컴퓨터 과학 교수이다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep7_obiwan.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>난 와플(칼로리)이 신경 쓰였다. Kellis를 만났을 때 그는 비만의 위험에 관여하는 나의 유전 변이에 대해서 설명하기 시작했다. 그 변이는 Kellis도 역시 가지고 있었다.</p>
+
+<p>내가 지난번에 썼듯이 나는 최근 내 지놈의 염기 서열과 원시 데이터를 가지고 있다. 그 후로 나는 그것에 포함된 비밀을 이해하는데 도움을 줄 수 있는 과학자들을 만나고 있다.</p>
+
+<p>I began by looking at the genetic variants that scientists understand best. These are the mutations that alter a single base in a protein-coding gene. But these variants are limited to a tiny portion of my genome. Only about 1 percent of human DNA is made up of protein-coding genes.</p>
+
+<p>I was talking to Kellis about the kind of variant that lurks in the other 99 percent: the mysterious wilderness known as non-coding DNA.</p>
+
+<p>Non-coding DNA has puzzled scientists for decades. They’ve struggled to determine which parts affect our health, and which do nothing at all. That uncertainty has led a lot of scientists to focus just on protein-coding genes, because that’s where they have the best odds of discovering something that can help people.</p>
+
+<p>But Kellis and others want to find the thousands of segments nestled in non-coding DNA that have important functions.</p>
+
+<p>In recent years, Kellis and other researchers have developed methods to distinguish possible jewels of non-coding DNA from all the surrounding junk. And they have gotten so good at identifying these possible elements in non-coding DNA that they’re now looking for genetic puzzles to solve.</p>
+
+<p>Recently, Kellis decided to look at one of the biggest of them all: the link between obesity and a gene called FTO.</p>
+
+<p>“제발 나좀 연구해줘요” Kellis가 말했다.</p>
+
+<p>2007년 독립적으로 두 개의 팀에 속한 과학자들은 뚱뚱한 사람들이 비정상적으로 많은 수의 FTO 유전자내 변이를 발견했다. 이것은 유전자와 비만의 연결에 대한 첫 번째 연구로 이후 많은 연구들이 나타났다. 이 변이는 켈로스와 내가 모두 가진 것으로 평균 7 파운드가 더 나가게 되며 rs1421085라고 알려져 있다.</p>
+
+<p>이 발견 이후로 많은 연구자들이 정확히 FTO가 어떻게 체중에 영향을 미치는지에 대한 많은 연구가 진행되었다.  They observed that brain cells make a lot of FTO proteins. Some researchers hypothesized that the proteins might control hunger. But researchers couldn’t find any firm evidence for that idea.</p>
+
+<p>Further research revealed that rs1421085 was not actually in the FTO gene. Instead, it was located in nearby non-coding DNA. That discovery raised the possibility that rs1421085 altered people’s weight in a way that didn’t involve FTO at all.</p>
+
+<p>Kellis collaborated with Melina Claussnitzer, a visiting professor from the University of Munich, to look at the non-coding DNA in which rs1421085 was located. They found that it’s actually located in a genetic switch that had previously been unknown. Even more intriguingly, they found that the switch activates several different genes in fat cells all at once.</p>
+
+<p>Having discovered this switch, Kellis dubbed it Obesity1. “I call it OBE1 for short, in honor of Obi-Wan Kenobi,” Kellis said. “You know, Obi-Wan Kenobi was a little chubby as well.”
+Kellis and his colleagues then investigated human fat cells to see how OBE1 influences people’s weight. The genes it switches on cause fat cells to store fat away in reserves. If OBE1 turns off, the cells burn the fat instead.
+“It’s like a switch on the wall, and for the people with the risk variant, it’s stuck in the on position,” said Kellis. “But for the non-risk people, you can switch it on and off.”</p>
+
+<p>Kellis and his colleagues suspected that the genes controlled by the OBE1 switch had a powerful influence over body weight. To test that idea, they engineered mice to shut down one of those genes. The engineered mice lost half their body fat and no longer put on extra weight on a high-fat diet. Kellis and h is colleagues found that they burned more energy in their fat cells, even in their sleep.</p>
+
+<p>Kellis and his colleagues then manipulated the mice, interfering with OBE1. Now his mice could produce heat from their fat cells like normal animals. Kellis and his colleagues found that if the mice ate a high-fat diet, they stopped putting on extra weight.</p>
+
+<p>Discovering this series of steps in our metabolism could point to new drugs to treat obesity, according to Kellis. “You suddenly have levers and handles you can pull,” he said.</p>
+
+<p>When Kellis discovered he had the fat-boosting variant of OBE1 a few years ago, it made a certain amount of sense to him. “At some point I was chubbier, and I had to work hard to lose some weight,” he said. And now his new research is giving him a deeper understanding of his biology.</p>
+
+<p>Kellis feels that watching his diet is effective enough to cope with his own version of OBE1. “There’s no downside,” he said. But dieting is not enough for some people. Now that we know OBE1 may be important to how we store fat, Kellis said, it may be possible to manipulate it with drugs. Instead of adjusting people’s weight by a few pounds, as natural genetic variations do, a drug acting on OBE1 might be able to produce more dramatic weight loss.</p>
+
+<p>“We may be able to help people who are losing the battle,” Kellis said.</p>
+
+<p>나는 살이 찌지는 않았지만 조금 빼는 것에 대해서는 긍정적이다. 내가 OBE1에 대해서 지고 있지 않다면 이상황에 대해서 내가 말할 수 있는 것은 난 non-coding DNA의 힘에 교착상태라는 것이다. 그래서 나는 다음번 Kellis를 만날 때 그가 와플을 권한다면 난 거절할 것이다.</p>
+
+<h2 id="에피소드-7-중복과-결실">에피소드 7: 중복과 결실</h2>
+
+<p>1900년대 초 유전학이 생겨난 후 1세대 유전학자들은 뒤로 손이 묶인채 일해야 했다. 그들은 서열의 변화가 사람들의 특성을 변화하고 사람들에게 상속되는지, 유전자가 DNA에 암호화 되어 있는지 몰랐다. 기술적으로 현미경이나 간단한 화학적 염색이 전부였다.</p>
+
+<p>이러한 불리한 조건에도 유전학의 근본적 발견을 했다.</p>
+
+<p>이러한 발견 중 하나는 완벽하지는 않지만 DNA였다. 세포들이 복사되어 자손에게 특성이 전달될 때 때때로 실수를 한다. 그러나 떄로는 아주 크게 망쳐버리기도 한다. 세포는 우연히 DNA 분자에 새로운 수백만 베이스의 중복(떄로는 수천개)을 추가하기도 한다. 지놈이 새로운 생물체를 만들기 위한 요리책인 경우 이러한 중북은 실수로 별도의 페이지를 인쇄하는것과도 같다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep6_cookbook.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure> 
+
+<p>그들은 반대의 방법으로 망치기도 하는데 DNA를 건너뛰어 새로운 지놈을 만드는데 이러한 것은 지놈 요리책을 깔끔하게 찢어 버리는 것과 같다.</p>
+
+<p>이러한 커다란 중복이나 결실은 복제수변이(copy number variants)라고 알려져 있는데 이들은 건강에 심각한 결과를 가져올 수 있다. 1959년 과학자들은 21번 염색체의 완전한 서열이 중복되는 경우 다운 증후군이 발생하는 것을 발견했다.</p>
+
+<p>지난 80년간 불행하게도 과학자들은 이러한 변이를 알고 있음에도 불구하고 오늘날까지 과학자들은 그것들을 잘 이해하지 못하고 있다. 일반적인 DNA 시퀀싱 기술(작은 조작으로 자르고 읽어내는)은 이러한 복제수 변이를 찾아내는 것을 어렵게 한다. 거대한 돌연변이가 숨어있는 것이다. 과학자들은 이제 그들을 볼 수 있는 새로운 방법을 개발하고 있다.</p>
+
+<p>난 몇몇 연구자들에게 나의 복제수 변이를 찾을 방법을 물었다. 예일대의 마크 거스타인과 그의 팀은 짧은 삽입과 삭제 740,000개를 확인했다. 또한 2,000 베이스에 달하는 2,000개의 커다란 중복과 결실을 찾았다. 나의 지놈의 한 부분에서는 122,000 베이스의 중복을 가지고 있으며 다른 부분에서는 163,000 베이스의 누락되어있다.</p>
+
+<p>“덩어리야” 데이터를 보고 있는데 거스타인이 중얼거렸다. “그건 심각한 덩어리야”</p>
+
+<p>복제수 변이를 카탈로그화하는 것은 그것들을 이해하는 첫걸음이다. 떄로는 그것들은 혜택이다. 떄로는 부담이 되기도 한다. And sometimes, incredibly enough, these radical changes to our genomes make no apparent difference at all.</p>
+
+<p>브로드 연구소의 생물학자인 Bob Handsake에게 나의 지놈을 보여줬을 때 그는 그이 최근 연구에 따르면 특별한 주의가 필요하다고 했다. 그 들 중 하나가 바ㄹ고 녹말을 분해하는데 도움을 주는 타액내의 아밀라아제 효소이다.</p>
+
+<p>아밀레이즈(amylase) 유전자는 지난 몇 백만년동안 흥미로운 진화를 겪고 있다. 우리 영장류의 친척들은 하나의 아미레이즈 유전자를 가지고 있다. 하지만 우리 인간은 다수의 복사본들을 지니고 있다.(많은 사람들은 17개까지)</p>
+
+<p>일부 과학자들은 여분의 아밀레이즈 유전자자의 진화는 인간의 기원에 중요한 단계라고 생각한다.  It’s possible our ancestors used their amylase enzymes to break down food more efficiently. The extra energy liberated by our extra amylase could then fuel our calorie-hungry brains.</p>
+
+<p>그 가설대로라면 평균이하의 아밀레이즈 유전자를 가진 나는 실망스러웠다.  I couldn’t help but wonder if I do a lousy job of drawing energy out of my morning oatmeal, starving my poor brain in the process.</p>
+
+<p>HandSaker는 나의 기운을 복돋아 주었다. 아밀라아제는 인간들 사이에서 넓게 펴져있다. 유럽인들은 일반적으로 6-8개가 통상 발견된다고 그와 그의 동료들이 발견했지만 몇몇 사람들은 2개를 지니고 있다. “왜 사람들이 서로 다른 숫자를 지니는지 모른다.”</p>
+
+<p>더 많은 아밀라아제 유전자를 지니고 있다고 해서 건강에 좋다는 것은 분명하지 않다. 2014년과 2015년 3팀의 과학자들은 적은 복사본의 아밀라아제 유전자를 갖는 사람들이 비만의 위험이 높다는 리포트를 제출했다. Some researchers speculated that making less of the enzyme would make people not taste their food as much as others and eat more.</p>
+
+<p>그러나 Handsaker와 그의 동료들은 더 큰 그룹의 사람들에 대해서 아밀라이제를 더 자세히 보았을 때 그들은 연결을 찾지 못했다.  For now, it looks as if my meager amylase gene count doesn’t have much impact on my life.</p>
+
+<p>But Handsaker wasn’t going to let me off that easy. He had some disappointing news about another gene, which encodes a protein called haptoglobin. Haptoglobin helps control the chemistry of blood, grabbing molecules like hemoglobin and cholesterol and pulling them out of circulation.</p>
+
+<p>In some people, the haptoglobin gene measures about 6,400 bases long. But other people carry a version from which 1,700 bases have been cut out. The short version of the gene makes a short version of the protein, which behaves differently than the long one. When long haptoglobin proteins bump into each other, they snap together in groups of four, forming an X shape. When short haptoglobins bump into each other, they snap together in pairs, forming a dumbbell-like cluster.</p>
+
+<p>Handsaker and his colleagues discovered that when the long proteins form an X shape, they remove cholesterol slowly. The dumbbell shape formed by short proteins clears cholesterol faster. As a result, people who carry the long gene have higher cholesterol levels than people with the short gene.</p>
+
+<p>This discovery, which Handsaker and his colleagues reported in February, marks one of the first times that scientists have been able to uncover the chain from a copy number variant to a protein’s structures to its impacts on health. “That’s a big thing to be able to get to the cause,” said Handsaker. “It gives a deeper understanding of what’s going on.”</p>
+
+<p>As for me, Handsaker had some bad news. “You’ve got two copies of the slow kind,” Handsaker told me. “All other things being equal, you’re predicted to have more cholesterol in the blood. It’s just a roll of the dice, and you ended up a little worse on the cholesterol front.”</p>
+
+<p>Handsaker and other researchers are embarking on new studies of copy number variants, looking for other effects. Sometimes these mutations alter how proteins work, as in the case of haptoglobin. Some deletions make entire genes vanish. Some duplications can give us extra copies of genes, which can raise the levels of proteins in our bodies.</p>
+
+<p>“It’s doing something in your body,” said Handsaker. “Whether it’s a big effect or a small effect on your health, we don’t know. But as our tools improve, we’re beginning to find things.”</p>
+
+<h2 id="에피소드-8-보호자-역할의-변이">에피소드 8: 보호자 역할의 변이</h2>
+
+<p>대화가 유전자로 전환 될때에는 일반적으로 무서워진다. 돌연변이, 위험, 질병, 죽음.</p>
+
+<p>하지만 그렇게 될 필요는 없다. 과학자들은 일부 유전자 변이가 실제로 병으로부터 우리를 보호하는 것을 알고 있다.</p>
+
+<p>최근까지 어쩌면 연구자들은 그것들을 보지 않았다. No one came to a geneticist demanding to know why they weren’t getting cancer or arthritis.</p>
+
+<p>“제가 생각하기로는 보호 변이(protective variants)들은 수백에서 수천개가 존재한다고 생각합니다.” 스크립스 중개 과학 연구소의 에릭 토플이 말했다. “우리는 그들 중 아주 작은 부분에 대해서 알고 있을 뿐이죠”</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep8_Knights.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>나는 토플에게 어떻게 나의 지놈에서 그러한 보호 변이를 찾을 수 있을까 물었다. 그는 동료인 Ali Torkamani를 알려주었다. 그러나 실망 할 수도 있다고 경고했다. Torkamani는 아무것도 찾을 수 없을 수도 있다.</p>
+
+<p>분석을 한지 몇일 후 Torkamani는 이야기 할 준비가 되었다. 난 그에게 전화를 했고 나의 지놈에서 보호할 수 있는 90개의 변이에 리스트에 대해서 설명했다. But after he took a close look at the evidence, he found most of it squishy. 단지 하나의 변이에 대해서는 확실한 자신감을 가졌다.</p>
+
+<p>나는 그 하나의 변이에 대해서 알게 된것에 대해서 매우 감사했다. 그것은 크론병이라는 자가 면역 질환에 대해서 나를 보호한다.</p>
+
+<p>미국인 700,000명은 소화기관 염증으로 평생을 고통받는다. 크론병을 가진 사람들은 지속적인 설사와 복통을 겪을 수 있으며 체중 감소 위험에 처할 수 있다. 크론병에 대한 치료방법은 현재 없다. the best that doctors can offer is medications that cool the immune system down and a diet that doesn’t trigger a new flare-up. Many people with the disorder eventually need surgery to have diseased pieces of the gut removed.</p>
+
+<p>십여년전 피츠버그대학의 유전학자인 Richard Dueer와 그의 동료들은 크론병의 위험을 증가시키는 유전자 변이에 대한 연구를 진행했다. 그들은 질병을 가진 사람들에 비정상적으로 많은 변이를 발견했다. 그들은 IL23R이라는 하나의 면역체계에 들어갔다.</p>
+
+<p>그러나 과학자들은 예기치 못한 발견을 했다. IL23R의 또다른 변종은 크론병 환자에서 비정상적으로 드문변이로 후속연구에서 강하게 크론병에 걸릴 위험을 감소시키는 것을 확인했다.</p>
+
+<p>유럽인의 8%가 가지는 특정 변이로 rs11209026으로 알려져있다.</p>
+
+<p>Torkamni는 내가 그 소수자중 하나라고 알려주었다.</p>
+
+<p>Since Duerr’s study, other scientists have discovered even more good things about rs11209026. It also protects people against other diseases that involve the immune system, such as psoriasis and ankylosing spondylitis, in which inflammation causes vertebrae to fuse together in the spine.</p>
+
+<p>As the evidence for the protective power of my variant grew, a number of researchers set out to discover where that power came from. They took a careful look at the gene it alters, IL23R. That gene encodes a protein that decorates immune cells.</p>
+
+<p>Normally, the IL23R protein functions as a kind of radio antenna. It picks up certain molecular signals released by other immune cells and relays them into the cell’s interior. The cell then responds by turning on genes that trigger inflammation. That inflammation can be a valuable weapon against infections — if it’s produced in the right situations. If it’s triggered by false alarms, however, it can cause chronic damage, like Crohn’s disease.</p>
+
+<p>Grant Gallagher, a scientist at the Institute for Biomarker Research in Hamilton, N.J., and his colleagues, have found that the rs11209026 variant has a drastic effect on IL23R. The entire protein slips out of the cell and floats away. It can still pick up signals, but it can’t relay them onward. As a result, Gallagher proposes, my variant breaks the chain of communication and stops the immune system from producing inflammation.</p>
+
+<p>After Torkamani’s news, I found myself developing odd feelings about my variant. It’s hard to put those feelings into words. Maybe I felt smug, discovering I was part of a small fortunate club. Maybe I felt grateful, thinking of people I know who have to cope with decades of struggles brought on by Crohn’s disease.</p>
+
+<p>Torkamani tempered my fondness for my variant with a warning. It’s entirely possible that future studies will reveal that ripping out my IL23R antennae puts me at risk of other diseases. “It may be a double-edged sword,” he warned. “You have to wonder, what are you sacrificing for this protection?”</p>
+
+<p>It also turns out that I have other genetic variants that may actually increase my risk of Crohn’s disease.</p>
+
+<p>Scientists still know so little about how harmful and protective variants combine to affect our health that they won’t become a part of standard medical care any time soon. “It’s hard to see how you’d use them for clinical advice,” said Torkamani. “I can’t see a physician saying, ‘You’re protected from coronary heart disease — eat all the hamburgers you want.’”</p>
+
+<p>The greatest value of a variant like rs11209026 is not the protection it gives me and others like me, however. By studying it, scientists can learn about the complete biological picture of a disorder like Crohn’s disease. “It opens up the biology,” said Topol.</p>
+
+<p>And once scientists understand a disease, they can test out treatments to cure it.</p>
+
+<p>A number of pharmaceutical companies have already been trying to turn rs11209026 into a drug for years. They’ve designed drugs for Crohn’s disease and psoriasis that mimic the effects of the variant, breaking the inflammation communication relay in a similar way. Last year, the FDA approved the anti-psoriasis drug Cosentyx, made by Novartis, and other companies are getting promising results with other drugs now in human trials.</p>
+
+<p>That being said, protective variants don’t always deliver slam dunks. Last year, Amgen abruptly canceled its own ambitious psoriasis drug program because a number of volunteers in the trial reported having suicidal thoughts. The double-edged sword of protection may cut too deep.</p>
+
+<p>Scientists are now ramping up their hunt for protective variants. Torkamani, Topol, and their colleagues are studying more than 1,300 people who are over 80 years old but have no chronic diseases and don’t take chronic medications. They launched the study to look for genetic variants that helped their subjects enjoy a healthy old age.</p>
+
+<p>In April, they reported in Cell a handful of genetic variants that were suspiciously common. Intriguingly, many of the genes that contain these variants make proteins in the brain — where they might shield old people from cognitive decline. For now, their results are only suggestive; scientists will have to look at many more healthy old people to replicate the study.</p>
+
+<p>Torkamani checked my genome for the variants they’ve linked to healthy aging. He didn’t find any. I’m trying not to take that news too hard, though. I know that I may very well have my own collection of rare genetic variants that promote a healthy old age. And if I don’t, there’s always a chance that a drug made from one of Topol and Torkamani’s discoveries will help me out in my later years.</p>
+
+<h2 id="에피소드-9-x와-y의-고대-경로">에피소드 9: X와 Y의 고대 경로</h2>
+
+<p>내 지놈을 탐구하면서 유전변이가 몇몇 질환에서는 위험을 높이는 반면 몇몇 질환에서는 나를 보호하는 나의 건강에 미치는 영향에 대해서 배웠다. 그러나 나는 나의 DNA에 있는 나의 역사(나와 우리 전체 인간의 조상에 대한)에 대해서 찾아보고 싶었다.</p>
+
+<figure>
+<img src="/images/2016-08-22/EP9_FamilyTree.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>나 혼자만이 아니었다. 많은 사람들이 자신의 기원에 대해서 알아보기 위해 검사회사에 자신의 침을 보내고 있다.
+과학으로서 유전계보는 얼마되지 않았지만 빠르게 성장하고 있다. 몇 년전 연구자들은 하나의 유전자에 대해서 다른 사람들과 비교할 수 있었다. 이제는 23andMe나 Ancestry.com과 같은 회사들은 한번에 수십만개의 마커를 볼 수 있다. 그러나 이러한 마커는 우리 DNA에서 아주 작은 선택에 불과하다. 우리의 기원에 대한 최신의 연구들에서 연구자들은 전체 지놈을 사용하여 비교한다.</p>
+
+<p>계보학의 새로운 선구자를 찾기위해 난 뉴욕지놈센터를 방문했다. It’s a fascinating vista, I discovered, although you have to beware of the mirages.</p>
+
+<p>The researchers in New York ran a series of tests on my DNA, each pulling out different historical clues. In one test, they looked at my Y chromosome. Men have 22 pairs of nearly identical chromosomes, along with an X chromosome they get from their mothers and a Y they get from their fathers. The other 22 pairs shuffle segments of DNA together with each new generation.</p>
+
+<p>The Y, on the other hand, is passed down virtually unchanged from father to son.</p>
+
+<p>That unusual inheritance makes the Y relatively easy to study. If a man acquires a new mutation on a Y chromosome, all his male descendants will inherit it. They can quickly identify themselves as cousins by the mutations that they share.</p>
+
+<p>It turns out I have a Y chromosome called E1b1b1. In some ways, that’s not a big surprise. E1b1b1 is a fairly common Y chromosome among Jewish men. My father is an Ashkenazi Jew with roots in Germany and eastern Europe.</p>
+
+<p>But E1b1b1 is hardly just a “Jewish” chromosome. E1b1b1 turns out to be common as well among men in southern Europe and North Africa. And it’s most common in Ethiopia and Somalia.</p>
+
+<p>Does that mean I’m Somali? I’m pretty sure I’d get turned away from a family reunion in Mogadishu. Nevertheless, my particular Y chromosome probably originated in a man who lived thousands of years ago in the Horn of Africa.</p>
+
+<p>Some of his male descendants made their way to North Africa and then hopped into southern Europe. Others spread across the Red Sea to the Near East, where the Y chromosome ended up in the Jewish population. My Y chromosome took a long journey, in other words, that its original owner did not.</p>
+
+<p>“The Y chromosome is just from one ancestor,” Joseph Pickrell, a researcher at the New York Genome Center, told me. “It’s an ancestor that a lot of people care about, but it’s randomly chosen from thousands of ancestors.”</p>
+
+<p>To get a richer view of my ancestry, Pickrell and his colleagues looked at my entire genome, seeing how common each of its genetic variants is in different populations across the world. On its own, each variant can’t say much. They may find, for example, that one of my variants is present in 50 percent of northern Europeans but only 20 percent of Nigerians.</p>
+
+<p>“That gives you a tiny bit of information,” said Pickrell. “But if you sum that up over hundreds of thousands of genetic variants, it gets to be very, very powerful.” If you have hundreds of thousands of variants that are all more common in Nigerians than Northern Europeans, you probably got them from Nigerian ancestors.</p>
+
+<p>For someone like me, the picture isn’t so simple. While my father is an Ashkenazi Jew, my mother can trace her ancestry back to Protestants in England and Catholics in Ireland and Germany. Different parts of my DNA thus point back to different origins.</p>
+
+<p>To figure out the sources of my genome, Pickrell and his colleagues used a variety of statistical methods to divide my ancestry up into the most likely combination of groups.</p>
+
+<p>They confirmed that I’m a pan-European mutt. One of their methods, for example, found that about 43 percent of my genome is Ashkenazi, 25 percent from northern or central Europe, 23 percent Italian, 6 percent southwestern European (Spain, Portugal, and France). I have a speck of Northern Slavic DNA (2.2 percent), and 1.3 percent that they couldn’t place.</p>
+
+<p>“You should treat those numbers as an approximation of reality,” Pickrell warned. Basically, his analysis showed that I’m half Jewish — which fits nicely with all the Passovers and bar mitzvahs I’ve had with my father’s side of the family. But the notion that I’m almost a quarter Italian comes as a complete surprise (as much as I may like gnocchi). My numbers may shift in years to come, Pickrell said, as scientists add more genomes to their studies.</p>
+
+<p>These variants can only take me back a few centuries into my ancestry. To dig deeper into my origins, the New York Genome Center scientists used another piece of software, called RFMix, to probe my genome. It takes advantage of the way DNA gets passed down from generation to generation.</p>
+
+<p>As eggs and sperm develop, their chromosome pairs come together and swap chunks of DNA. That means that our genomes are actually assembled from ancient chunks of DNA.</p>
+
+<p>“It’s a quilt, made up of a segment from one ancestor attached to a segment from another ancestor,” said New York Genome Center researcher Nathaniel Pearson. “And we’re trying to figure out where those segments came from.”</p>
+
+<p>Close relatives share long, identical stretches of DNA in the chromosomes. Over the generations, those stretches get smaller. Yet even when they get downright tiny, RFMix can pick out matching chunks of DNA in relatives. It can even find them in people who share a common ancestor a couple thousand years ago.</p>
+
+<p>Pearson and his colleagues used RFMix to see how my Ashkenazi Jews came to be Ashkenazi in the first place. According to one theory, a kingdom near the Caspian Sea populated by people known as Khazars converted en masse to Judaism a thousand years ago. According to another, waves of Jews migrated out of the Near East during the Roman Empire, spreading to different parts of Europe. Later, in the Middle Ages, they came together in Poland to escape persecution.</p>
+
+<p>Pearson and his colleague Dina Zielinski tested these possibilities by looking for matching chromosome segments in genomes from a few representative groups of people in Europe and the Near East. To test the Khazar hypothesis, for example, they looked at genomes from an ethnic group from that region, called the Adygei. To look for an ancestry in the Near East, they added Palestinians and Druze to the analysis. And to include western Europeans in the mix, they used genomes from French people and Russians.</p>
+
+<p>A lot of my genome, Pearson and Zielinski found, was most similar to French DNA. That’s probably due mainly to my mother’s ancestry. My father’s Ashkenazi DNA, on the other hand, matched up in many segments with the Palestinian and Druze genomes. In other places, it matched the Russian DNA. Very little of it looks like Adygei.</p>
+
+<p>Pearson warned me that this kind of research pushes the science of ancestry pretty close to its limits. “We have to have tons of grains of salt on the table,” he said. But at the very least, my genome turns out to be an argument against the Khazar theory of the Jews. Hidden behind the Ashkenazi curtain of my DNA lies an origin in the Near East.</p>
+
+<p>But when it comes to human ancestry, each curtain pulled away reveals another curtain further back in time. The Jews may have first gotten their identity as a people in the Near East, but they shared a much older identity with the rest of humanity. And I was about to discover that there were echoes of that ancient identity in my genome as well.</p>
+
+<h2 id="에피소드-10-인간-이전-조상의-메아리">에피소드 10: 인간 이전 조상의 메아리</h2>
+
+<p>우리 모두가 그렇듯이 나는 나의 지놈에 내 조상에 대한 단서를 가지고 있다. 일부 단서는 아일랜드에서 중세마을로, 18세기로 돌아가 우크라이나의 유대인촌(shtetl, 과거 동유럽에 있던 소규모의 유대인촌)에 도달한다. 그러나 다른 모든 사람들처럼 나 또한 훨씬 이전에 그곳을 떠났고 그 단서가 나의 지놈이 실마리를 제공한다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep13.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>“모든 것이 당신의 지놈에 보존되어 있다.” 캘리포니아 UCSC의 유전학자인 베스 샤피로가 나에게 말했다.</p>
+
+<p>나는 내 DNA에서 내 조상의 역사를 읽을 수 있는지 샤피로에게 물었다. 샤피로는 UCSC의 Paleogenomics 연구소의 코디네이터로 100,000년전 낙타의 화석이나 700년된 순록의 냉동된 배설물에서  DNA를 뽑아내는 일을한다. 또한 살아있는 유기체나 그들의 조상을 밝히는 일을 한다.</p>
+
+<p>“당신은 PSMC 그래프를 그리기 위해 당신의 지놈을 사용했나요?” 내가 도착했을 때 샤피로가 물었다. 난 PSMC 그래프가 무엇인지 몰랐다.</p>
+
+<p>PSMC, I learned, stands for pairwise sequentially Markovian coalescent, and it’s a method that allows scientists to turn a single genome into a time machine, so that they can visit ancestors who lived long before our species even existed.</p>
+
+<p>그 방법은 각 유전자의 두 개의 복사본을 이용한다. 우리는 어머니와 아버지로부터 각각 하나의 복사본을 상속받으며 그 것은 동일하지 않다.</p>
+
+<p>예를 들어, 나는 MEFV라는 유전자에 대해서 두 복사본을 가지고 있다. 각 복사본은 다른곳에서 찾아볼 수 없는 적은수의 돌연변이를 가지고 있다. 복사본의 돌연변이 중 하나는 가족성지중해열이라는 유전질환의 원인이 될 수 있다. 하지만 MEFV 유전자의 두 복사본이 동일한 돌연변이를 가지고 있지 않다. 고맙게도 나는 하나만 가지고 있다.</p>
+
+<p>MEFV 유전자의 각 복사본은 자신만의 역사를 가지고 있다. 카피 하나는 나의 어머니와 어머니의 부모로부터 그렇게 시간을 거슬러 간다. 아버지에게 받은 카피 역시 그렇다. 그렇게 충분한 시간을 거슬러 간다면 내 MEFV 복사본은 하나로 모아질 것이고 두 복사본은 공통의 조상으로부터 온 것이다.</p>
+
+<p>It turns out that if you look at any gene in a genome, you can estimate when that common ancestor lived. Over time, genes pick up new mutations at a roughly regular rate. If two copies of a gene differ by a lot of mutations, they come from a common ancestor who lived a long time ago. If they’re identical, they may have originated much more recently — perhaps in an ancestor who lived within the past few generations.</p>
+
+<p>Shapiro and André Elias Rodrigues Soares, a postdoctoral researcher in her lab, looked across my whole genome to discover its history. They divided my DNA into 30 million pieces, each 100 bases long, and then compared my two copies of each piece. If a pair was genetically similar, that meant I inherited them from a fairly recent common ancestor. If they were substantially different, that meant they came from a far older forebear. The oldest pieces of my genome come from my ancestors from several million years ago — back when they were small-brained hominins living in Africa long before our species emerged.</p>
+
+<p>Shapiro and Soares also found that these ages aren’t smoothly spread out across history. Instead, a lot date back to certain periods in the past. That pattern reveals something profound about human history: It tells us how the population of our species rose and fell and rose again.</p>
+
+<p>When a population is big, it has a lot of genetic diversity. New mutations arise in children, and they can be passed down to future generations. If that population suddenly crashes, a lot of that genetic diversity vanishes. Now parents can only pass down a limited number of genetic variants to their offspring. The genetic diversity of small populations is thus usually low.</p>
+
+<p>Thanks to this difference, scientists have found, you can estimate the size of the human population in the past by comparing the versions of genes in a single person’s genome. If you can trace a lot of genes back to one particular period of time, that means that the human population was relatively big back then.</p>
+
+<p>이러한 종류의 분석을 통해 과거 인구의 크기를 대략 측정할 수 있고 이것은 아주 옛날을 엿보기에 충분하다. 내 경우 샤피로와 소아레스가 본 것이다.</p>
+
+<figure>
+<img src="/images/2016-08-22/graph_v2_720.jpg" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>백만년전 나의조상(모든 살아있는 인간의 조상)은 상대적으로 큰 인구집단이었다. 그것은 아마도 호모 에렉투스라는 종이 1.8만년전 출현이었을 것이다. 호모 에렉투스는 오늘날 우리들처럼 크지만 뇌는 우리의 <sup>2</sup>&frasl;<sub>3</sub> 크기였다. 그들은 동물의 시체에서 고기를 얻고 야생의 밭에서 농경을 하는데 석기를 만들어 사용했다.</p>
+
+<p>60만년전 우리의 조상은 극적인 감소(그 감소는 내 지놈에 새겨져 있다)를 경험했다. 그 감소는 호모 에렉투스가 두 개의 갈라지는(하나는 네안데르탈인 다른 하나는 우리 호모 사피엔스) 것과 일치한다.</p>
+
+<p>“그것은 종이 분화할 때 발생하는거에요” 소아레스가 나에게 말했다. “인구 집단이 감소하는 것은 당신이 하나에서 두 개의 집단으로 갈라지게 때문이죠”</p>
+
+<p>그런 다음 나의 지놈은 내 조상이 다시한번 추락하는 것을 보여준다. 약 75,000년이나 50,000년전으로 작은 무리가 아프리카에서 가까운 동쪽으로의 이동이다. 그들의 자손은 후에 유럽, 아시아, 태평앙의 새로운 곳에 도달했다.</p>
+
+<p>Today non-Africans may number in the billions, but they originated from a tiny group of travelers carrying only a tiny level of genetic diversity compared to what you can find in Africa. I still carry the genetic imprint of that little band that first made their way to a new continent.</p>
+
+<p>“What it shows, beyond any shadow of a doubt, is that the entirety of your lineage is preserved in your DNA,” Shapiro said.</p>
+
+<p>Astronomers use telescopes to see great distances, but they use different kinds of telescopes to see different features of the universe. Geneticists have telescopes of their own for looking back across the history of our species. PSMC plots are useful to reconstruct the size of populations over hundreds of thousands of years. But other telescopes can reveal other stories in our genomes.</p>
+
+<p>샤피로와 소아레스는 나에게 내 조상의 깊은 역사를 보여주었다. 나는 내 망원경을 바꾸기 위해 콜드 스프링 하버 연구소로 여행했다.</p>
+
+<p>나는 네안데르탈인을 보러 갔다.</p>
+
+<h2 id="에피소드-11-네안데르탈인-속으로">에피소드 11: 네안데르탈인 속으로</h2>
+
+<p>따뜻한 늦은 겨울 아침 나는 롱아일랜드에 위치한 콜드 스프링 하버 연구소의 생물학자인 Adam Siepel을 방문했다. In his office, a tiny rock garden on a shelf burbled with flowing water. Nearby, Siepel kept a picture of his children next to the brooding replica of a Neanderthal skull. I wondered if Siepel had arranged them as a family portrait: ancestors and descendants.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep11.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>Siepel studies genomes to learn about the intertwined histories of humans and their extinct relatives. He and his colleagues are learning how we diverged from a common ancestor and then mingled our genes together. A couple weeks beforehand, I had asked Siepel if he wouldn’t mind looking at my genome to see how it fit into that history.</p>
+
+<p>He had never gotten such a personal request before, but he decided to give it a shot. “You’re definitely pushing us into a new area,” Siepel told me. But the more he inspected my genome, the more interesting the exercise became. “It’s actually a little addictive once you start,” he admitted.</p>
+
+<p>We were soon joined by Melissa Jane Hubisz, a Cornell graduate student who works with Siepel. Ilan Gronau, a colleague of his from Israel, joined in by Skype on a flat-screen television on the wall. They were ready to tell me about what they had found.</p>
+
+<p>Neanderthals first came to light in 1856, when quarry workers dug up strange-looking bones in Germany. Since then, many more Neanderthal bones have been uncovered, giving us a fuller picture of Neanderthals. They were stout, barrel-chested, heavy-browed, big-brained humans. They lived across Europe and Asia, killing rhinos and other large game and decorating themselves with jewelry made of shells and eagle claws. They thrived for thousands of generations, as Ice Age glaciers advanced and retreated, only to mysteriously vanish 40,000 years ago.
+In the 1990s, researchers discovered that bits of DNA were still lurking in Neanderthal fossils. Over time they figured out how to collect more material, and in 2013, they recovered an entire genome from a single Neanderthal toe bone. Comparing Neanderthal DNA to that of living humans, they found that we split from a common ancestor around 600,000 years ago.
+As the scientists searched for more ancient DNA, they were able to recover another genome from a chip of finger bone found in a Siberian cave called Denisova. To their surprise, it belonged to a third lineage, which they dubbed the Denisovans. Denisovans and Neanderthals, the DNA revealed, split apart about 450,000 years ago.</p>
+
+<p>When scientists began comparing the genomes of Neanderthals and Denisovans to living humans, they found chunks of DNA from these extinct humans were nestled inside modern human genes. After modern humans expanded out of Africa over 50,000 years ago, they appear to have interbred with Neanderthals several times. Today the genomes of all non-Africans are at least a couple percent Neanderthal DNA.</p>
+
+<p>Denisovans, on the other hand, left their DNA almost entirely in today’s residents of New Guinea and neighboring islands.</p>
+
+<p>Now a younger generation of scientists is digging deeper into the story of human interbreeding. Earlier this year, for example, Siepel and his colleagues reported that the flow of genes actually went both ways. Over 100,000 years ago, Neanderthals acquired modern human DNA in their genome.</p>
+
+<p>At my request, Siepel and his colleagues turned their tools on my DNA. To trace my evolutionary history, they compared my genome to those of a few people from different parts of the world, along with the Neanderthal and Denisovan genomes. Then Siepel and his colleagues asked a very simple — but monstrously difficult — question: What version of evolution from a common ancestor would account for the way our genomes look today?</p>
+
+<p>Siepel and his colleagues ran their computer program for days to try out thousands of different scenarios. “It builds a coherent model that has to explain everything,” said Siepel. Now Siepel and his colleagues were ready to show me how I fit on the human family tree.</p>
+
+<p>As someone of European descent, their study showed, I shared a close ancestry with Asians. That’s because we all descend from the small group of people who expanded out of Africa over 50,000 years ago. I share an older common ancestor with living Africans. And I’m an even more distant cousin to Neanderthals and Denisovans — except for a small portion of my DNA, which comes from a relatively recent interbreeding with Neanderthals.</p>
+
+<p>Sipel과 그의 동료들은 내가 적어도 2%의 네안데르탈인의 DNA를 가지고 있다고 추정되지만 4%가 될 수도 있다고 말했다.</p>
+
+<p>고맙게도 소비자 직접 거래 방식의 유전학 회사인 23andMe를 통해 네안데르탈인의 DNA를 추정하는 사람들이 늘어났다. But simply knowing your percentage of Neanderthal DNA isn’t much more than a conversation piece.</p>
+
+<p>“그들은 단지 숫자만 제공할 뿐이에요” Sipel이 말했다. “그들은 어디가 네안데르탈인인지 말해주지 않죠”. Sipel과 그의 동료들은 그들의 통계 도구를 통해 내 지놈 DNA에서 네안데르탈인의 조각을 찾아냈다.</p>
+
+<p>나는 10,000 base 또는 그 이상의 1,000개의 네안데르탈인의 DNA 조각을 가지고 있으며 그중 가장 긴 것은 189,871 베이스였다.</p>
+
+<p>“난 흥미있는 영역의 목록을 가지고 있죠” Siepel이 종이 한 장을 꺼내며 말했다. “There’s a lot I don’t know about these, but here are some that I’ve flagged.”</p>
+
+<p>Sieple은 네안데르탈인의 유전자 조각이 포함된 DSCF5라는 유전자에 대해 설명했다. 이 유전자가 가지는 변이는 관상동맥질환(coronary artery disease)과 관련이 있다.</p>
+
+<p>“We can click on a few others that I found,” Siepel said, as Hubisz navigated us through a genome browser on the computer. He threw out names of other genes — CEP350, GPATCH1, PLOD2 (“catchy name,” he muttered).</p>
+
+<p>Siepel didn’t know if these Neanderthal variants had any effect on my health for good or bad. “I don’t have a really coherent story,” he admitted.</p>
+
+<p>I knew someone who might, though.</p>
+
+<p>At Vanderbilt University, Tony Capra, a computational biologist, is using a DNA database kept by the school’s medical center to search for links between Neanderthal variants and an assortment of diseases.</p>
+
+<p>“If I know your Neanderthal DNA, can I better predict your risk of, say, depression?” Capra wondered.</p>
+
+<p>Capra and his colleagues found that the answer was yes. In one study, they examined more than 28,000 patients of European descent, checking their DNA at 1,495 spots to see if they had a Neanderthal variant there. They created a kind of genetic Neanderthal score for each patient.</p>
+
+<p>The scientists found that people with similar Neanderthal scores also had similar risks for certain disorders, including depression, mood disorders, and actinic keratosis (scaly skin lesions caused by sun exposure).</p>
+
+<p>I asked Capra and his colleagues, Joshua Akey and Selina Vattathil at the University of Washington, to take a look at my genome to see how my Neanderthal heritage affects my health.</p>
+
+<p>They calculated my Neanderthal score and then compared my score to the results from their study on Vanderbilt patients.</p>
+
+<p>“In the depression case,” he told me, “the Neanderthal DNA incredibly, incredibly, incredibly slightly decreased your risk. And it incredibly slightly increased your risk for actinic keratosis.”</p>
+
+<p>In their research, Capra and his colleagues have also looked for individual genes that had effects that were strong enough to be detected on their own.</p>
+
+<p>Scanning the electronic health records of their subjects, the scientists noted how many of them experienced each of more than 1,000 medical conditions. They then looked at the people with each condition, noting whether they shared any Neanderthal variant that were less common in other people.</p>
+
+<p>So far, this search has led Capra and his colleagues to a handful of genes. One of those genes, called SELP, is involved in forming blood clots. The Neanderthal variant can cause people to make too many clots. “That gives you a risk of all sorts of nasty things, like stroke and embolisms,” said Capra.</p>
+
+<p>Capra found that I have the modern human version of SELP. But I do have Neanderthal variants of a few other genes that may potentially raise my risk of other disorders. I use a Neanderthal gene to make certain proteins in my thyroid gland, for example. Those proteins end up in the gut, where they have been linked to digestive disorders. Another of my Neanderthal genes puts me at slightly greater risk of nosebleeds.</p>
+
+<p>It’s possible that some surviving Neanderthal genes make us sick because they don’t mesh well with our own biology. But some Neanderthal genes that are harmful today may have been beneficial to our ancestors. A Neanderthal version of SELP, for example, could have helped our ancestors recover from injuries faster. “Having an increased coagulation response could help you seal up wounds more quickly,” Capra said.</p>
+
+<p>In 10 years, Capra and his colleagues will probably know a lot more about this evolutionary game of roulette. When you take your genome to the frontier of research, you have to be willing to accept some murky results and some cruel teases. When I was visiting Siepel and his colleagues at Cold Spring Harbor, Gronau said something so casually that I almost missed it.</p>
+
+<p>“There is some Denisovan gene flow in Carl’s genome,” he said.</p>
+
+<p>I sat up straight. “What?”</p>
+
+<p>“You have a tiny bit, which is more than I see in the other genomes that I’ve tried,” Gronau said.</p>
+
+<p>That made no sense at all. The few Denisovan fossils ever found (the finger bone and a couple teeth) were discovered in a Siberian cave. The only people with substantial amounts of Denisovan DNA alive today are Melanesians — the people in and around New Guinea. I think I’d know if I was part Melanesian.</p>
+
+<p>But scientists have also found some evidence that tiny traces of Denisovan DNA have spread into other groups of people. In Tibet, for example, many people carry a Denisovan version of a gene called EPAS1. Studies on these Tibetans show that it helps them cope with life at high altitudes.</p>
+
+<p>“Yeah, I found it, too,” Hubisz said to Gronau.</p>
+
+<p>Siepel looked at me with a grin. “How are you at high altitudes?” he asked.</p>
+
+<p>The result might be an error. Or perhaps I really do have some Denisovan DNA — which was first acquired by Neanderthals, who then passed it on to modern humans. “Still, you can’t exclude the possibility that you have some Denisovan DNA,” said Siepel.</p>
+
+<p>By midday, we were done inspecting my genome and hungry for lunch. Gronau signed off from Israel, and Hubisz, Siepel, and I stood up to stretch our legs. “I wish there was more of a punch line,” Hubisz said, almost apologetically. “We found a lot of data.”</p>
+
+<p>“Well,” Siepel added, “we found that he was part alien. Maybe we can look into that a little more.”</p>
+
+<h2 id="에피소드-12-host-to-viruses-and-selfish-gene">에피소드 12: Host to viruses and selfish gene</h2>
+
+<p>If you want a full accounting of your genome, you can’t stop with your genes. 우리는 약 20,000개의 단백질 코딩 유전자를 지니고 있지만, 그것들은 인간 지놈에서 1퍼센트에 지나지 않는다. 온전한 인간 지놈 카탈로그에는 유전적 기생동물도 포함되어 있다.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep12.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>그 기생동물(과학자들은 이것을 transposable element, 전이인자라고 부른다.)
+These parasites — which scientists call transposable elements — are a weird menagerie of viruses and parasitic chunks of DNA that have propagated themselves throughout our genomes over millions of years. Most of them are dead, disabled by ancient mutations. But a few continue to spread over the generations, putting us at risk of diseases and reshaping the genome along the way.</p>
+
+<p>Transposable elements can be surprisingly hard to recognize, and so many are yet to be discovered. But scientists have already found well over a million of them in human DNA, which take up a staggering amount of space in our genomes.</p>
+
+<p>“Right now, everyone in the field is going to agree that it’s going to be more than 50 percent,” Cedric Feschotte, a geneticist at the University of Utah, told me. But some new studies are raising the total to 65 percent. “It’s quite possible that the real number would be closer to 80 to 85 percent.”</p>
+
+<p>I asked Feschotte and his colleague Aurelie Kapusta to take a look at my genome for one particular kind of parasite: viruses.</p>
+
+<p>Normally, viruses hijack cells to produce new viruses that kill the cell as they escape to infect other cells, or other hosts.</p>
+
+<p>But every now and then, viruses insert their genes in an egg or a sperm cell. Instead of killing the cell, the virus’s DNA gets carried down into an embryo, which grows up and can pass down the viral DNA to its own offspring. Once this happens, viral DNA can get copied and inserted back into the same genome, multiplying over generations.</p>
+
+<p>Mutations gradually disable these viruses, leaving harmless genetic fragments in our genome. Scientists have discovered over 100,000 such fragments in human DNA, making up about 9 percent of our genome.</p>
+
+<p>Scientists have discovered some viral fragments that are many millions of years old, judging from the fact that the same viral DNA can be found in the same spot in the genomes of other primate species. But some viruses have been making new copies of themselves more recently than that.</p>
+
+<p>Feschotte and Kapusta pointed me to some viral segments in my genome that aren’t found in any other species than humans. They must be less than about 7 million years old — the time when our ancestors split from those of chimpanzees, our closest living relatives.</p>
+
+<p>I was especially intrigued by one kind of virus that Feschotte and Kapusta found in my genome, known as HML-2. While it’s not found in any other living species, scientists have also found it in the genome of Denisovans, a mysterious, extinct lineage of humans. The common ancestor of humans and Denisovans lived about 600,000 years ago. So that particular virus must have infected my ancestors before then.</p>
+
+<p>Along with viruses, scientists have discovered several other kinds of transposable elements, each with its own distinctive way of parasitizing our genome. At least 17 percent of our genome has been generated by a parasite known as LINE-1. LINE-1 was never a virus. Instead, it’s just a stretch of DNA that encodes a protein that inserts a new copy of its DNA back into the genome. LINE-1 is the granddaddy of all genomic parasites. Scientists have found LINE-1-like elements in the genomes of other animals, as well as plants, fungi, and even bacteria.</p>
+
+<p>Incredibly, we carry another kind of transposable element that evolved to exploit LINE-1. About 60 million years ago, a gene mutated into a transposable element called Alu. Alus can’t insert their new copies back into the genome. Instead, they hijack LINE-1’s proteins and use them to do the job. This sinister trick has produced over 1.2 million Alus in the human genome today, making up at least 10 percent of the human genome.</p>
+
+<p>While most transposable elements in our genomes are dead, a small fraction can still replicate themselves. For example, I have 1,024 Alus that aren’t in the human reference genome. And sometimes, these still-active parasites can be a problem.</p>
+
+<p>Each time a new transposable element drops into our genomes, it’s as if we’re playing a genetic game of Russian roulette. Once a new transposable element is created, it gets inserted back into our genomes pretty much at random. “If it lands in the middle of a gene, it’s going to have a big effect,” Mark Gerstein of Yale University told me after searching my genome.</p>
+
+<p>Indeed, scientists are finding that transposable elements can play a part in a number of diseases. Certain types of cancer cells, for example, carry new transposable elements that appear to help make them aggressive.</p>
+
+<p>Fortunately, the transposable elements found in my genome looked normal. “Normal means we found them in people who don’t have disease,” said Christopher Mason of Weill Cornell Medicine, who independently took a look at my inner parasites. “No guarantees, though.”</p>
+
+<p>As dangerous as transposable elements can be, we have come to depend on some of them. Mutations have transformed some transposable elements from parasites into useful tools for our own survival. We harnessed some genes from viruses, for example, and use their proteins to fight other viruses.</p>
+
+<p>Alus, scientists have also found, have sometimes merged into our own genes. By adding their DNA to our genes, they have given rise to new proteins.</p>
+
+<p>So I was fascinated to learn from Mason that he found four new Alus sitting in the middle of my genes — where perhaps they might someday become part of those genes in my descendants.</p>
+
+<p>“It isn’t a cause for alarm,” Mason assured me. “In the long view, it could be a playground for evolution.”</p>
+
+<h2 id="에피소드-13-answers-and-questions">에피소드 13: Answers and Questions</h2>
+
+<p>My trip through my genome has been a strange one. I’ve discovered extra genes in my DNA, and broken ones. I’ve learned I have Neanderthal genes for nosebleeds, and genetic traces of a mysterious southern European ancestor in my not-too-distant past. My genome contains strengths and weaknesses, I’ve learned: I’m protected against an autoimmune diseases by one variant, while another puts me at risk of gaining extra weight.</p>
+
+<figure>
+<img src="/images/2016-08-22/Ep10.gif" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>Yet for everything we can know about our genomes, there’s far more left to decipher. Scientists are still figuring out how to make an accurate reconstruction of our DNA, for example. We are thus still a long way from a day when genomes will become a regular part of medicine.</p>
+
+<p>“Everyone in this area knows there are huge pitfalls,” said Adam Siepel of Cold Spring Harbor Laboratory. The idea of using today’s genome-sequencing technology to let people make medical decisions is, to Siepel, “really terrifying.”</p>
+
+<p>Siepel said that the process is too error-prone to be ready for medical prime time. “You’d have to be sure you’ve ironed all these things out. And we’re nowhere near ironing them all out.”</p>
+
+<p>The trouble with genome sequencing starts at the very first step. In a sample of blood or saliva, scientists collect the DNA from millions of cells. While those cells all originated from a single fertilized egg with a single genome, they picked up mutations as they divided. “As soon as you have more than one cell, you can have differences in those cells,” said Christopher Mason of Weill Cornell Medicine.</p>
+
+<p>A different kind of error — technical noise, as Mason refers to it — can creep in when scientists sequence the DNA. Chemical reactions can go awry. Some sequencing methods involve attaching glowing molecules to bases, for example, and sometimes the molecules fall off. “You’ve lost the flashlight,” said Mason.</p>
+
+<p>DNA sequencing companies build in a lot of error correction to squelch technological noise. But once scientists get their hands on the raw data from genome sequencing, they have to wrestle with another kind of ambiguity — computational noise. Computer programs may map some fragments of DNA to the wrong part of the genome. They may fail to map other reads at all. Ultimately, the information about a given base may be so ambiguous that a scientist may have to just leave it blank.</p>
+
+<p>On my travels with my genome, I got to experience this noise firsthand. When I asked Mason to analyze my genome, he counted up 3,998,314 SNPs — genetic variants each of which changed a single base in DNA. When I gave my genome to another expert — Mark Gerstein at Yale — he found 3,559,137 SNPs. Gerstein and Mason are among the top genomics experts in the country, and yet they came up with tallies that differed by 439,177 SNPs.</p>
+
+<p>When I awkwardly brought up that difference with Mason, he didn’t bat an eye. “You can take the same genome and add it up and get a different answer,” he said.</p>
+
+<p>If you sequence the same person’s genome twice, using the same sequencing machine and the same software to interpret the results, Mason explained the results will not be identical. “Ninety-five percent is about as good as it gets,” he said.</p>
+
+<p>That kind of accuracy is good enough to do research on genomes. Early telescopes weren’t terribly accurate, either, and yet they still allowed astronomers to discover new planets, galaxies, and even the expansion of the universe. But if your life depended on your telescope — if, for example, you wanted to spot every asteroid heading straight for Earth — that kind of fuzziness wouldn’t be acceptable.</p>
+
+<p>Improving accuracy is only half the struggle for scientists who are trying to bring genome sequencing into the clinic. Once medical geneticists can look at the genomes of their patients, they have to decide what all the genetic variants actually mean for their health.</p>
+
+<p>To see how medical geneticists are learning how to read genomes, I went back to Boston to see Robert Green, the doctor who had originally invited me to get my genome sequenced and fall down this deep rabbit hole.</p>
+
+<p>I met Green at his office at Harvard Medical School with his colleague, Matthew Lebo, the director of bioinformatics at the Laboratory for Molecular Medicine at Partners HealthCare. The two of them had already been inspecting my genome for a while when I arrived. An alphanumeric splatter filled their monitor.</p>
+
+<p>Green and Lebo knew they couldn’t possibly inspect every one of the millions of variants in my genome for a possible risk to my health. So they were narrowing down their list to the most likely suspects.</p>
+
+<p>Most of what scientists know about genetic disorders concerns protein-coding genes, which make up only 1 percent of the genome. So, with a few keystrokes, Lebo threw away the millions of variants in my non-coding DNA. He and Green were now left with 81,000 variants on the screen.</p>
+
+<p>Lebo and Green suspected a lot of those 81,000 variants were probably harmless, too. They applied another set of filters to throw out more of them. For example, they eliminated all the genetic variants that have not yet been linked to a particular disease in a published scientific paper. Now we were down to just 145 variants.</p>
+
+<p>Even that list was probably too long. It was possible that some of the scientific reports that linked those 145 variants to diseases were wrong. So Lebo and Green used another trick to shrink the list even more. They reasoned that rare diseases had to be caused by rare genetic variants. So they got rid of all the variants that have been found in over 5 percent of people of European descent.</p>
+
+<p>“Now we’re down to 18,” Green declared. “So how do we get meaning out of them?”</p>
+
+<p>By digging.</p>
+
+<p>Lebo and Green had run out of automatic filters. Now they had to deploy their own expertise, closely inspecting each variant, reviewing the findings of other clinical genetics labs, and bringing a skeptical eye to the scientific literature.</p>
+
+<p>Some of the variants held up to this scrutiny. For example, one of the variants on their list is located in my MEFV gene. It can cause a condition called familial Mediterranean fever, which I first saw flagged in my report from Illumina. Green and Lebo decided this was a solid finding.</p>
+
+<p>This diagnosis didn’t make me fret. You need two copies of the variant to get the disease, and I only have one. And since my children have reached their teens without developing the symptoms, I’m pretty sure they didn’t get a copy from my wife.</p>
+
+<p>But I wasn’t so blasé when Lebo and Green turned their attention to another gene, called DSG2.</p>
+
+<p>“This is one that’s … interesting,” Lebo said, inspecting the screen.</p>
+
+<p>Interesting is not a word you want to hear from a medical geneticist who is inspecting your DNA.</p>
+
+<p>DSG2 makes proteins in the heart that make cardiac cells stick together. Mutations to DSG2 can potentially make it do that job worse. Geneticists who study the variant I carry have linked it to cardiomyopathy, a rare condition in which the heart walls become deformed, leading to sudden, fatal heart attacks.</p>
+
+<p>I nodded as Lebo and Green explained my DSG2 variant to me. But inwardly I was desperately wondering why they weren’t bundling me into an ambulance to head straight to a cardiologist. Instead, they opened up a new window on Green’s monitor to look at a dense spreadsheet.</p>
+
+<p>Over the years, the geneticists at Partners have collected medical details about their patients, and they’ve drawn their own conclusions about the risks posed by certain variants. They came to the conclusion that my DSG2 variant was probably harmless.</p>
+
+<p>Lebo and Green then took a closer look at my DSG2 variant. While it is rare, it’s much more common than the form of cardiomyopathy that scientists have linked it to. That’s not what you’d expect if the variant caused the disease. Green and Lebo were now confident they could rule it out.</p>
+
+<p>“A few years ago, this would have been worrisome for you,” Green told me. “If you stopped there, you’d say, ‘Oh, my God, I have this mutation!’ Today we’re going to call it ‘likely benign’ and relieve you of that.”</p>
+
+<p>“How could geneticists get that so wrong?” I asked.</p>
+
+<p>“It’s really shocking in a way,” Green said. “Everybody was doing it with the best intentions and the highest integrity. But the presumption was wrong.”</p>
+
+<p>The sky outside Green’s window was getting dark and it was time for me to head home. “So there’s your genome,” Green said. He had a sly look on his face. “Ultimately, the more you know, the more frustrating an exercise it is. What seemed to be so technologically clear and deterministic, you realize is going through a variety of filters — some of which are judgments, some of which are flawed databases, some of which are assumptions about frequencies, to get to a best guess.”</p>
+
+<p>Green shrugged his shoulders. “And that’s the state of the art.”</p>
+
+<p>As Green and other scientists toured me through my genome, I learned enough to continue exploring on my own. When an interesting new paper on genetics comes out, I’ll sometimes check if I have the variant under study. Recently, scientists identified three variants associated with “subjective well-being.” I had two out of three.</p>
+
+<p>This genomic noodling is great fun, although it may not mean that much to my own existence. But I also know that there will be other studies coming out that I’ll need to approach with more care. It turns out I don’t have variants in the BRCA1 gene that are known to raise the risk of breast cancer — a relief when I think of my daughters. But I do have six other mutations in my BRCA1 gene that scientists have yet to pin down as being dangerous or harmless. As scientists examine those mutations in the future, I’ll have to brace myself for more rolls of the genetic dice.</p>
+
+<p>While I wait for answers, I realized, there is something useful that I could do with my genome. I could donate it to science.</p>
+
+<p>In talking with scientists, I came across a number of programs that invite people to turn over their genomes to scientists for research. The New York Genome Center, for example, has set up a nonprofit site called DNA.Land. I’ve given my genome to them. I’ve also given it to the biobank at Brigham and Women’s Hospital. And I’m looking for more places to hand over my 3.2 billion bases. I’m not donating my genome because it’s exceptional. It isn’t. It’s thankfully boring. (Well, except maybe for the Denisovan bits.)</p>
+
+<p>But even if it’s not exceptional, my genome can be combined with thousands of other genomes to someday reveal exceptional things about all of us.</p>
+
+<p>(Some of the scientists who analyzed my genome kindly provided their technical results, which you can see here.)</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="/blog/2016-04-22-illumina-sav/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="/blog/2016-07-29-game-of-genome/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2016. Changbum Hong.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

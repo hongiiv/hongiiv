@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Changbum Hong</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Changbum Hong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aviato</title>
+      <link>/tags/aviato/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>/tags/aviato/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bachman</title>
+      <link>/tags/bachman/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>/tags/bachman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pied piper</title>
+      <link>/tags/pied-piper/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>/tags/pied-piper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

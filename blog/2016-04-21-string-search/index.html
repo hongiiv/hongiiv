@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Changbum Hong</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+<header class="row text-center header">
+   <img src="/img/hongiiv2.png" alt="Author Image" class="img-circle text-center headshot"> 
+  <h1 class="author">Changbum Hong</h1>
+</header>
+
+<section id="info-pane" class="row text-center info">
+  
+  <h3 class="intro">Software engineer for cancer research  Seoul, Korea.</h3>
+  
+  
+  <h4 class="description">Cancer data science, clinical bioinformatics, DNA variation, precision oncology</h4>
+  
+</section>
+
+<section id="social-pane" class="row text-center social">
+  
+  <a href="https://twitter.com/hongiiv" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  <a href="https://facebook.com/hongiiv" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://github.com/hongiiv" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://instagram.com/hongiiv" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/hongiiv" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="mailto:hongiiv@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  
+  
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Changbum Hong",
+  "url": "",
+  "sameAs": [
+    "https://twitter.com/hongiiv",
+    
+    
+    
+    "https://facebook.com/hongiiv",
+    "https://github.com/hongiiv",
+    "https://instagram.com/hongiiv",
+    "https://linkedin.com/in/hongiiv",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,
+    ""
+  ]
+}
+</script>
+
+
+
+<header class="row text-left title">
+  <div align='center'><h3 class="title">Primer 찾기 대소동 - Exact string searching (Aho-Corasick)</h3></div>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta tcenter">
+        PUBLISHED ON MAY 5, 2019 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h2 id="aho-corasick">Aho-Corasick</h2>
+
+<p>&ldquo;긴 문자열에서 여러 개의 단어를 동시에 찾을 때 선형 시간복잡도 (이론상 최소)를 가지는 알고리즘. Trie 기반의 자료구조에, KMP 알고리즘처럼 실패했을 경우 어디까지 건너뛰어야 할지 알려주는 장치를 만들었다.&rdquo;</p>
+
+<p>이상 Aho-Corasick 알고리즘에 대한 설명은 생략&hellip;</p>
+
+<h2 id="primer-sequence">Primer sequence</h2>
+
+<p>Amplicon 방식으로 Sequencing을 수행하고 나면 amplicon을 디자인시 사용한 primer sequence를 제공한다. 여기서는 primer sequence를 trimming을 한다거나 하는 것에 대한 것이 아니라 과연 sequencing된 파일에서 해당 amplicon을 확인하여 raw fastq 파일만을 보고 해당 파일이 어떤 amplicon set를 사용했는지를 확인하는 방법에 대해 설명한다. 다양한 custom design panel을 보유하고 있거나, panel에 따라서 분석 pipeline이 다른 경우 유용하게 사용될 수 있다.</p>
+
+<pre><code class="language-sh">AMPL7153017787-F	GGGGAAGTAAGTAGGCCTGGGCCTGGCTGC
+AMPL7153017787-R	GGCCCTGAATTGGCAAACTTGGGTTGGGGG
+AMPL7153017830-F	CCCAGCTCAGCCAGCTCCAGAAGCAGGTGA
+AMPL7153017830-R	CCACCCCCACCCCCACCCCCAACCCTGGGC
+</code></pre>
+
+<p>Custom panel 또는 Qiagen의 GeneRead, Agilent SureSelect, Bioo Scientific의 NEXTflex와 같은 상용 제품의 경우 위와 같이 디자인에 사용한 primer sequence를 제공한다. 해당 제품으로 sequencing을 수행한 raw fastq 파일에 해당 primer sequence가 보이지 않거나 너무 적다거나 하는 경우에는 한번 고민해야 할 것이다. 우리는 <u>긴 문자열(fastq files)에서 여러 개의 단어(primer sequence)를 동시에 찾아서 그 빈도를 확인</u>할 것이다.</p>
+
+<h2 id="reverse-complement">Reverse Complement</h2>
+
+<p>Reverse complement와 같이 우리가 다루는 데이터는 몇가지 특성을 고려해야 한다. 단순히 string serarch가 아니란 말이다. 위에서 나온 <code>AMPL7153017787-F</code> primer는 <code>GGGGAAGTAAGTAGGCCTGGGCCTGGCTGC</code>라는 문자열과 <code>GCAGCCAGGCCCAGGCCTACTTACTTCCCC</code>라는 두개의 문자열을 찾아야 하는 것이다.</p>
+
+<h2 id="map-tree-만들기">Map(tree) 만들기</h2>
+
+<p>모든 primer sequence와 reverse complement sequence에 대해서 map(tree)를 생성한다.</p>
+
+<pre><code class="language-java">String line;
+BufferedReader reader = new BufferedReader(new FileReader(&quot;primer_sequence.txt&quot;));
+while ((line = reader.readLine()) != null)
+{
+	line = line.toUpperCase();
+	tree.add(line.getBytes(), line);
+	tree.add(revcomp(line).getBytes(), revcomp(line));
+}
+tree.prepare();
+```		
+
+FASTQ 파일 search
+------------------
+
+```java
+BufferedReader reader = new BufferedReader(new FileReader(&quot;sequencing.fastq&quot;));
+while ((line = reader.readLine()) != null)
+{
+	Iterator iter = tree.search(line.getBytes());
+	while(iter.hasNext()){ 
+		SearchResult result = (SearchResult) iter.next();
+		System.out.println(result.getOutputs());
+		System.out.println(&quot;line at: &quot;+nReads+&quot; Found at index: &quot; + result.getLastIndex());
+		termsThatHit.addAll(result.getOutputs());
+	}
+	
+}
+</code></pre>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="/blog/2016-04-18-blog-test/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="/blog/2016-08-04-hboc/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2016. Changbum Hong.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

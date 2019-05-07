@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-07-20-clinvar/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-07-29-game-of-genome/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-08-22-gog/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-04-22-illumina-sav/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-05-07-pcgr/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-04-25-variant-annotation/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-09-13-hgvs/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-04-26-visualizing-clinvar/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-08-04-hboc/</loc>
+    <lastmod>2019-05-07T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-04-21-string-search/</loc>
+    <lastmod>2019-05-05T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-04-18-blog-test/</loc>
+    <lastmod>2019-05-05T08:38:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/coderag/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/articles/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/aviato/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bachman/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pied-piper/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+</urlset>

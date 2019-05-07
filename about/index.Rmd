@@ -1,0 +1,46 @@
+---
+title: "About"
+output: html_document
+bibliography: bib.bib
+date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
+nocite: |
+   @Hwang:2019bn, @MAGICconsortium:2011dl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(PubMedWordcloud)
+author <- "Kyu-Baek Hwang"
+pmid <- getPMIDs(author = author, dFrom = 2002, dTo = 2018, n = 200)
+abstracts <- getAbstracts(pmid)
+words <- cleanAbstracts(abstracts)
+
+words <- dplyr::filter(words, word != 'developed' & word != 'high' & word != 'patient' & word != 'associated' & word != 'identified' & word != 'found' & word != 'performed' & word != 'potential' & word != 'including' & word != 'results' & word != 'developed' & word != 'available' & word != 'compared' & word != 'can' & word != 'may' & word != 'study' & word != 'associated' & word != 'one' & word != 'two' & word != 'first' & word != 'however' & word != 'used' & word != 'analyzed' & word != 'patients' & word != 'years' & word != 'present' & word != 'subsequent' & word != 'age' & word != 'whether' & word != 'use')
+words400 <- words[1:400, ]
+
+```
+
+<p>I am a software engineer working in [NGeneBio](http://www.ngenebio.com) in Seoul, Korea. Most of my activities involve cancer data science, i.e. analysis of data from high-throughput molecular profiling of tumor samples. </p>
+
+<p>Main ongoing research activities:
+
+   * Cancer genome interpretation
+
+   * NGS Analysis pipeline
+
+   * Clinical software developement
+
+   * Cloud computing
+
+<br>
+<p>
+A wordcloud of papers I have co-authored:
+<br/>
+[@Hwang:2019bn]
+[@MAGICconsortium:2011dl]
+
+</p>
+```{r publication_word_cloud, echo = F, message=FALSE, warning=FALSE}
+plotWordCloud(words400[], rot.per = 0, scale = c(5,0.3))
+```

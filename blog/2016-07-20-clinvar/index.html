@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Changbum Hong</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+<header class="row text-center header">
+   <img src="/img/hongiiv2.png" alt="Author Image" class="img-circle text-center headshot"> 
+  <h1 class="author">Changbum Hong</h1>
+</header>
+
+<section id="info-pane" class="row text-center info">
+  
+  <h3 class="intro">Software engineer for cancer research  Seoul, Korea.</h3>
+  
+  
+  <h4 class="description">Cancer data science, clinical bioinformatics, DNA variation, precision oncology</h4>
+  
+</section>
+
+<section id="social-pane" class="row text-center social">
+  
+  <a href="https://twitter.com/hongiiv" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  <a href="https://facebook.com/hongiiv" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://github.com/hongiiv" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://instagram.com/hongiiv" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/hongiiv" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="mailto:hongiiv@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  
+  
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Changbum Hong",
+  "url": "",
+  "sameAs": [
+    "https://twitter.com/hongiiv",
+    
+    
+    
+    "https://facebook.com/hongiiv",
+    "https://github.com/hongiiv",
+    "https://instagram.com/hongiiv",
+    "https://linkedin.com/in/hongiiv",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,
+    ""
+  ]
+}
+</script>
+
+
+
+<header class="row text-left title">
+  <div align='center'><h3 class="title">ClinVar Overview</h3></div>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta tcenter">
+        PUBLISHED ON MAY 7, 2019 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h2 id="rcv-기반의-임상적-유효성">RCV 기반의 임상적 유효성</h2>
+
+<p>ClinVar는 Variant와 Phenotype에 대한 내용을 ClinVar assertion(RCV)로 관리한다. 현재(2016년 7월) ClinVar에는 186,242개의 RCV 레코드가 존재한다. ClinVar의 레코드 중에서도 가장 관심있는 것은 <a href="http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/">clinical significane 필드</a>로 해당 변이가 phenotype과 어떤 연관이 있는지를 알려준다.</p>
+
+<p>RCV의 clinical significance는 SCV들에서 제공하는 clinical significance들을 집계한 RCV와 SCV는 다음과 같은 연관성을 가진다.</p>
+
+<p>| Combination of Values from different submitters | Reported as |
+| - | - |
+| Pathogenic and Likely pathogenic | Pathogenic/LikelyPathogenic |
+| (Pathogenic or Likely pathogenic or Benign or Likely benign)  AND Uncertain significance | Conflicting interpretations of pathogenicity |
+| (Pathogenic or Likely pathogenic) AND (Benign or Likely benign) | Conflicting interpretations of pathogenicity |
+| Benign and Likely benign | Benign/Likely benign |
+| Any single ACMG value AND any non-ACMG value, e.g. Uncertain significance and risk factor | Uncertain significance, risk factor |
+| Conflicting ACMG values AND any non-ACMG value, e.g. Pathogenic and Uncertain significance and risk factor | Conflicting interpretations of pathogenicity, risk factor|
+| No ACMG value AND multiple non-ACMG values, e.g.  Drug response and risk factor | drug response, risk factor |
+| A consortium does not agree on which ACMG assessement is valid | conflicting data from submitters|</p>
+
+<figure>
+<img src="/images/2016-07-20/Plot_1.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<h2 id="rcv-기반의-리뷰-상태">RCV 기반의 리뷰 상태</h2>
+
+<p>그렇다면 임사적인 유효성에 대한 평가 즉 리뷰 상태 또한 해당 변이와 phenotype과의 연관에 대해서 이야기 할때 <a href="http://www.ncbi.nlm.nih.gov/clinvar/docs/variation_report/#review_status">중요한 필드로</a> 가장 최고 단계(별로 리뷰상태를 보여줌)인 &ldquo;practice guideline&rdquo;과 ClinGen을 통해 리뷰를 거친 &ldquo;reviewed by expert panel&rdquo; 부터 무별인 &ldquo;no assertion provided&rdquo;까지 존재한다.</p>
+
+<figure>
+<img src="/images/2016-07-20/Plot_3.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<p>다음은 RCV의 Review Status에 따른 별 등급표이다.</p>
+
+<p>| Review status (in xml) | Stars |
+| - | :-: |
+| no assertion provided | 0 |
+| no assertion criteria provided | 0 |
+| criteria provided, single submitter | 1 |
+| criteria provided, multiple submitters, no conflicts | 2 |
+| criteria provided, conflicting interpretations | 1 |
+| reviewed by expert panel | 3 |
+| practice guideline |  4 |</p>
+
+<p>아래 그림은 Review status에 기반을 둔 별이 RCV 상에서 어떻게 분포하는지를 보여준다. 현재 star1(53%)과 star2(43%)가 가장 높은 비율로 존재한다.</p>
+
+<figure>
+<img src="/images/2016-07-20/Plot_4.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure>
+
+<h2 id="representing-conflicts-in-interpretation">Representing conflicts in interpretation</h2>
+
+<p>SCV(Variant Phenotype Submitter) 즉, submitter들이 서로 다른 interpretation에 대해 리포트 했다면 &ldquo;Conflicting interpreations of pahthogenicity&rdquo;로 RCV에 표시된다. 아래표는 submitter들에 의해 충돌시 어떻게 RCV에 <a href="http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/#clinsig_agg">report되는지</a>에 대해서 보여준다.</p>
+
+<p>| Combination of Values from different submitters    | Reported as |
+| - | - |
+|Pathogenic and Likely pathogenic | Pathogenic/LikelyPathogenic |
+|(Pathogenic or Likely pathogenic or Benign or Likely benign)  AND Uncertain significance | Conflicting interpretations of pathogenicity |
+|(Pathogenic or Likely pathogenic) AND (Benign or Likely benign) | Conflicting interpretations of pathogenicity|
+|Benign and Likely benign|Benign/Likely benign|
+|Any single ACMG value AND any non-ACMG value, e.g. Uncertain significance and risk factor  | Uncertain significance, risk factor|
+|Conflicting ACMG values AND any non-ACMG value, e.g. Pathogenic and Uncertain significance and risk factor |   Conflicting interpretations of pathogenicity, risk factor|
+|No ACMG value AND multiple non-ACMG values, e.g.  Drug response and risk factor|drug response, risk factor|
+|A consortium does not agree on which ACMG assessement is valid|conflicting data from submitters|</p>
+
+<p>아래 그림과 같이 submitter마다 clinical significance가 다른 경우 RCV 단계에서는 동일하게 &ldquo;Conflicting interpreation of pathogenicity&rdquo;로 표현되지만, variant 단계에서는 위의 표를 기반으로 하나는 &ldquo;Conflicting interpreation of pathogenicity&rdquo;와 &ldquo;Pathogenic/Likely pathogenic&rdquo;으로 표현된다.
+<figure>
+<img src="/images/2016-07-20/Plot_5.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+</figure></p>
+
+<p>ClinVar의 데이터는 크게 xml과 vcf 두가지 포맷으로 제공되며, xml은 RCV를 기반으로 데이터를 제공한다.</p>
+
+<pre><code class="language-xml">&lt;ClinVarSet ID=&quot;12151387&quot;&gt;
+  &lt;RecordStatus&gt;current&lt;/RecordStatus&gt;
+  &lt;Title&gt;GRCh38/hg38 15q11.2(chr15:22655582-23066575)x1 AND See cases&lt;/Title&gt;
+  &lt;ReferenceClinVarAssertion DateCreated=&quot;2013-08-02&quot; DateLastUpdated=&quot;2016-06-07&quot; ID=&quot;137811&quot;&gt;
+    &lt;ClinVarAccession Acc=&quot;RCV000050342&quot; Version=&quot;8&quot; Type=&quot;RCV&quot; DateUpdated=&quot;2016-06-07&quot;/&gt;
+    &lt;RecordStatus&gt;current&lt;/RecordStatus&gt;
+    &lt;ClinicalSignificance DateLastEvaluated=&quot;2013-09-27&quot;&gt;
+      &lt;ReviewStatus&gt;no assertion criteria provided&lt;/ReviewStatus&gt;
+      &lt;Description&gt;Conflicting interpretations of pathogenicity&lt;/Description&gt;
+      &lt;Explanation DataSource=&quot;ClinVar&quot; Type=&quot;public&quot;&gt;Likely pathogenic(1);conflicting data from submitters(1)&lt;/Explanation&gt;
+    &lt;/ClinicalSignificance&gt;
+</code></pre>
+
+<p>각 RCV는 ClinVarAssertion을 통해 SCV에 대한 정보를 제공한다.</p>
+
+<pre><code class="language-xml">  &lt;ClinVarAssertion ID=&quot;312552&quot; SubmissionName=&quot;nstd37&quot;&gt;
+    &lt;ClinVarSubmissionID localKey=&quot;nsv491772:copy number loss:See cases:1:SCV000173126&quot; submitter=&quot;ISCA site 14&quot; submitterDate=&quot;2014-06-21&quot;/&gt;
+    &lt;ClinVarAccession Acc=&quot;SCV000173126&quot; Version=&quot;3&quot; Type=&quot;SCV&quot; OrgID=&quot;505243&quot; DateUpdated=&quot;2015-12-17&quot;/&gt;
+    &lt;AdditionalSubmitters&gt;
+      &lt;SubmitterDescription OrgID=&quot;500029&quot; SubmitterName=&quot;International Standards For Cytogenomic Arrays Consortium (ISCA)&quot; category=&quot;consortium&quot;/&gt;
+    &lt;/AdditionalSubmitters&gt;
+    &lt;RecordStatus&gt;current&lt;/RecordStatus&gt;
+    &lt;ClinicalSignificance&gt;
+      &lt;ReviewStatus&gt;no assertion criteria provided&lt;/ReviewStatus&gt;
+      &lt;Description&gt;Likely pathogenic&lt;/Description&gt;
+    &lt;/ClinicalSignificance&gt;
+</code></pre>
+
+<pre><code class="language-xml">  &lt;ClinVarAssertion ID=&quot;312566&quot; SubmissionName=&quot;nstd37&quot;&gt;
+    &lt;ClinVarSubmissionID localKey=&quot;nsv491772:copy number loss:See cases:1:SCV000173127&quot; submitter=&quot;ISCA site 1&quot; submitterDate=&quot;2014-06-21&quot;/&gt;
+    &lt;ClinVarAccession Acc=&quot;SCV000173127&quot; Version=&quot;3&quot; Type=&quot;SCV&quot; OrgID=&quot;505237&quot; DateUpdated=&quot;2015-12-17&quot;/&gt;
+    &lt;AdditionalSubmitters&gt;
+      &lt;SubmitterDescription OrgID=&quot;500029&quot; SubmitterName=&quot;International Standards For Cytogenomic Arrays Consortium (ISCA)&quot; category=&quot;consortium&quot;/&gt;
+    &lt;/AdditionalSubmitters&gt;
+    &lt;RecordStatus&gt;current&lt;/RecordStatus&gt;
+    &lt;ClinicalSignificance DateLastEvaluated=&quot;2013-09-27&quot;&gt;
+      &lt;ReviewStatus&gt;no assertion criteria provided&lt;/ReviewStatus&gt;
+      &lt;Description&gt;conflicting data from submitters&lt;/Description&gt;
+      &lt;Comment&gt;Pathogenic(1), Uncertain significance(13)&lt;/Comment&gt;
+    &lt;/ClinicalSignificance&gt;
+</code></pre>
+
+<p>xml 파일내에는 variant에 대한 정보가 MeasureSet 태그의 Type=&ldquo;Variant&rdquo; 속성과 값에 의해 구분된다.</p>
+
+<pre><code class="language-xml">    &lt;MeasureSet Type=&quot;Variant&quot; ID=&quot;32488&quot;&gt;
+      &lt;Measure Type=&quot;copy number loss&quot; ID=&quot;41153&quot;&gt;
+        &lt;Name&gt;
+          &lt;ElementValue Type=&quot;Preferred&quot;&gt;GRCh38/hg38 15q11.2(chr15:22655582-23066575)x1&lt;/ElementValue&gt;
+        &lt;/Name&gt;
+        &lt;AttributeSet&gt;
+          &lt;Attribute Type=&quot;AbsoluteCopyNumber&quot; integerValue=&quot;1&quot;/&gt;
+        &lt;/AttributeSet&gt;
+</code></pre>
+
+<p>vcf 포맷에서는 CLNSIG 필드에서 255 즉 &lsquo;other&rsquo;로 분류해 버리기 때문에 정확한 정보를 얻기가 힘들다.</p>
+
+<pre><code class="language-python">10      126086581       rs121965044     G       A       .       .       RS=121965044;RSPOS=126086581;RV;dbSNPBuildID=133;SSR=0;SAO=1;VP=0x050268000a05000002110100;GENEINFO=OAT:4942;WGT=1;VC=SNV;PM;PMC;S3D;NSM;REF;ASP;LSD;OM;CLNALLE=1;CLNHGVS=NC_000010.10:g.126086581G&gt;A;CLNSRC=OMIM_Allelic_Variant;CLNORIGIN=1;CLNSRCID=613349.0012;CLNSIG=255;CLNDSDB=MedGen:OMIM:ORPHA:SNOMED_CT;CLNDSDBID=C0599035:258870:414:276426004;CLNDBN=Ornithine_aminotransferase_deficiency;CLNREVSTAT=no_criteria;CLNACC=RCV000000180.5
+</code></pre>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="/blog/2016-07-29-game-of-genome/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2016. Changbum Hong.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

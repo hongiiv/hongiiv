@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Changbum Hong</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+<header class="row text-center header">
+   <img src="/img/hongiiv2.png" alt="Author Image" class="img-circle text-center headshot"> 
+  <h1 class="author">Changbum Hong</h1>
+</header>
+
+<section id="info-pane" class="row text-center info">
+  
+  <h3 class="intro">Software engineer for cancer research  Seoul, Korea.</h3>
+  
+  
+  <h4 class="description">Cancer data science, clinical bioinformatics, DNA variation, precision oncology</h4>
+  
+</section>
+
+<section id="social-pane" class="row text-center social">
+  
+  <a href="https://twitter.com/hongiiv" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  <a href="https://facebook.com/hongiiv" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://github.com/hongiiv" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://instagram.com/hongiiv" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/hongiiv" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="mailto:hongiiv@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  
+  
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Changbum Hong",
+  "url": "",
+  "sameAs": [
+    "https://twitter.com/hongiiv",
+    
+    
+    
+    "https://facebook.com/hongiiv",
+    "https://github.com/hongiiv",
+    "https://instagram.com/hongiiv",
+    "https://linkedin.com/in/hongiiv",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,
+    ""
+  ]
+}
+</script>
+
+
+
+<header class="row text-left title">
+  <div align='center'><h3 class="title">VCF Annotation Pipeline</h3></div>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta tcenter">
+        PUBLISHED ON MAY 7, 2019 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<p>최근 NGS 분석 소프트웨어들은 많은 연구를 통해 점점 임상에 적용할 수 있을 정도로 정교해지고 있다. 여기서는 그동안 나왔던 툴과 데이터베이스를 이용하여 어떻게 유전변이에 대한 annotation을 수행할지에 대한 설명을 한다.</p>
+
+<h2 id="freebayes">freebayes</h2>
+
+<p>In its simplest operation, freebayes requires only two inputs: a FASTA reference sequence, and a BAM-format alignment file sorted by reference position.</p>
+
+<pre><code class="language-sh">$ freebayes -t ifu131_brcamastr_manifest_v130428_0.ampliconmanifest.bed --fasta-reference /NAS/workflow-dependencies/hg19.fa Dx-HCT-15-1_final.bam &gt; sample_raw.vcf
+$ java -jar snpEff/SnpSift.jar annotate -v snpEff/clinvar_20160104.vcf sample_raw.vcf &gt; sample_clinvar.vcf
+$ java -jar snpEff/SnpSift.jar annotate -v snpEff/dbsnp_146_grch37p13.vcf sample_clinvar.vcf &gt; sample_clinvar_dbsnp.vcf
+$ bcftools annotate -a lcr.bed.gz -h header.hdr -c CHROM,FROM,TO,LCR sample_clinvar_dbsnp.vcf &gt; sample_clinvar_dbsnp_lcr.vcf
+$ bcftools annotate -a IFU180_BRCAMASTR_BED_v130736.bed.gz -h header2.hdr  -c CHROM,FROM,TO,TARGET sample_clinvar_dbsnp_lcr.vcf &gt; sample_clinvar_dbsnp_lcr_target.vcf
+$ transvar ganno --vcf sample_clinvar_dbsnp_lcr_target.vcf --ucsc &gt; sample_clinvar_dbsnp_lcr_target_ucsc.vcf
+$ java -jar snpEff/SnpSift.jar annotate -v ALL.chr17.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf sample_clinvar_dbsnp_lcr_target_ucsc.vcf &gt; sample_1000g.vcf
+</code></pre>
+
+<pre><code class="language-sh">$ cat sample_clinvar_dbsnp_lcr_target_ucsc.vcf
+ chr17   41245560        .       C       T       61820.2 .       AB=0.486948;ABP=19.0523;AC=1;AF=0.5;AN=2;AO=5279;CIGAR=1X;DP=10841;DPB=10841;D    PRA=0;EPP=11466.2;EPPR=12065.5;GTI=0;LEN=1;MEANALT=3;MQM=59.9985;MQMR=60;NS=1;NUMALT=1;ODDS=12108.5;PAIRED=0.999811;PAIREDR=1;PAO=0;PQA=0;PQR=    0;PRO=0;QA=122696;QR=113357;RO=5555;RPL=2641;RPP=3.014;RPPR=3.02945;RPR=2638;RUN=1;SAF=2641;SAP=3.014;SAR=2638;SRF=2781;SRP=3.02945;SRR=2774;T    YPE=snp;technology.illumina=1;TARGET=BRCA1_ex11_09    GT:DP:DPR:RO:QR:AO:QA:GL        0/1:10841:10841,5279:5555:113357:5279:122696:-7780.72,0,    -6940.48        NM_007300 (protein_coding)      BRCA1   -       chr17:g.41245560C&gt;T/c.1988G&gt;A/p.S663N   cds_in_exon_10  CSQN=Missense;codon_po    s=41245559-41245560-41245561;ref_codon_seq=AGC;source=UCSCRefGene
+</code></pre>
+
+<pre><code class="language-json">{
+  &quot;variant001&quot;: {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;genomic_coordiante&quot;: {
+      &quot;build&quot;: &quot;GRCh37&quot;,
+      &quot;chromosome&quot;: &quot;17&quot;,
+      &quot;start&quot;: 41223094,
+      &quot;end&quot;: 41223094,
+      &quot;left_10_bp&quot;: &quot;TTGATAGTAA&quot;,
+      &quot;righ_10_bp&quot;: &quot;CAGATTTGAA&quot;
+    },
+    &quot;allele&quot;: {
+      &quot;reference&quot;: &quot;T&quot;,
+      &quot;alternate&quot;: &quot;C&quot;,
+      &quot;total_read_depth&quot;: &quot;26065&quot;,
+      &quot;reference_allele_ovservation&quot;: &quot;31&quot;,
+      &quot;alternate_allele_ovservation&quot;: &quot;25998&quot;,
+      &quot;allele_balance&quot;: &quot;0&quot;,
+      &quot;alternate_allele_depth_ratio&quot;: &quot;0&quot;,
+      &quot;type_of_allele&quot;: &quot;snp&quot;,
+      &quot;variant_percent&quot;: &quot;50&quot;
+    },
+    &quot;gene&quot;: {
+      &quot;transcript&quot;: {
+        &quot;id_0&quot;:{
+          &quot;transcript&quot;:&quot;NM_007294&quot;,
+          &quot;exon_number&quot;:&quot;15/22&quot;,
+          &quot;strand&quot;:&quot;-&quot;,
+          &quot;transcript_accession&quot;:&quot;NM_007294.3&quot;,
+          &quot;protein_accession&quot;:&quot;NP_009228.2&quot;,
+          &quot;coding_dna&quot;:&quot;NM_007294.3:c.4696A&gt;G&quot;,
+          &quot;protein&quot;: &quot;p.S509G&quot;,
+          &quot;coding_consequence&quot;: &quot;intronic&quot;
+        },
+        &quot;id_1&quot;:{
+          &quot;transcript&quot;:&quot;NM_007297&quot;,
+          &quot;exon_number&quot;:&quot;15/22&quot;,
+          &quot;strand&quot;:&quot;-&quot;,
+          &quot;transcript_accession&quot;:&quot;NM_007297.3&quot;,
+          &quot;protein_accession&quot;:&quot;NP_009228.2&quot;,
+          &quot;coding_dna&quot;:&quot;NM_007297.3:c.4696A&gt;G&quot;,
+          &quot;protein&quot;: &quot;p.S509G&quot;,
+          &quot;coding_consequence&quot;: &quot;intronic&quot;
+        }
+      },
+      &quot;gene_symbol&quot;:&quot;BRCA1&quot;,
+      &quot;gene_name&quot;:&quot;breast cancer 1&quot;,
+      &quot;entrez_gene_summary&quot;:&quot;This gene encodes a nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor.&quot;
+    },
+    &quot;variant_information&quot;: {
+      &quot;rsid&quot;: &quot;rs1799966&quot;,
+      &quot;vcf_format&quot;: &quot;chr17 41223094.T C.&quot;,
+      &quot;ucsc_format&quot;: &quot;chr17:41,223,094-41,223,094&quot;,
+      &quot;exac_format&quot;: &quot;17-41223094-T-C&quot;
+    },
+    &quot;assay&quot;: {
+      &quot;assay_name&quot;: &quot;BRCA Panel v1&quot;,
+      &quot;target&quot;: &quot;BRCA1_ex16_01&quot;
+    },
+    &quot;clinical&quot;: {
+      &quot;clinvar_accession&quot;: {
+        &quot;id_0&quot;: &quot;RCV0000031&quot;,
+        &quot;id_1&quot;: &quot;RCV000048673&quot;
+      },
+      &quot;variant_disease_name&quot;: {
+        &quot;id_0&quot;: &quot;Breast cancer&quot;,
+        &quot;id_1&quot;: &quot;Ovarian cancer&quot;
+      },
+      &quot;variant_disease_db_name&quot;: {
+        &quot;id_0&quot;: &quot;Gene Review&quot;,
+        &quot;id_1&quot;: &quot;Med Gen&quot;
+      },
+      &quot;cosmic_id&quot;: {
+        &quot;id_0&quot;: &quot;&quot;
+      }
+    },
+    &quot;population_frequency&quot;: {
+      &quot;g1000&quot;: {
+        &quot;AFR&quot;:&quot;0.5&quot;,
+        &quot;AMR&quot;:&quot;0.4&quot;,
+        &quot;EAS&quot;:&quot;0.3&quot;,
+        &quot;EUR&quot;:&quot;0.45&quot;,
+        &quot;SAS&quot;:&quot;0.55&quot;,
+        &quot;ALL&quot;:&quot;0.45&quot;
+      },
+      &quot;esp5400&quot;: {
+        &quot;ALL&quot;:&quot;0.32&quot;
+      },
+      &quot;cg69&quot;: {
+        &quot;ALL&quot;:&quot;0.22&quot;
+      },
+      &quot;korean&quot;: {
+        &quot;ALL&quot;:&quot;0.33&quot;
+      }
+    },
+    &quot;prediction&quot;: {
+      &quot;acmg_prediction_cat&quot;: &quot;Likely Benign&quot;,
+      &quot;polyphen2&quot;: {
+        &quot;type&quot;:&quot;Protein effect&quot;,
+        &quot;score&quot;:&quot;0.05&quot;,
+        &quot;reference_range&quot;:&quot;0.05-1&quot;,
+        &quot;text&quot;:&quot;Damaging&quot;
+      },
+      &quot;shift&quot;: {
+        &quot;type&quot;:&quot;Protein effect&quot;,
+        &quot;score&quot;:&quot;0.05&quot;,
+        &quot;reference_range&quot;:&quot;0.05-1&quot;,
+        &quot;text&quot;:&quot;Benign&quot;
+      }
+    },
+    &quot;flag&quot;: {
+      &quot;low_coverage&quot;: &quot;yes&quot;,
+      &quot;homopolymer_region&quot;: &quot;yes&quot;
+    },
+    &quot;build&quot;: {
+      &quot;dbsnp_build&quot;: &quot;dbSNP 142&quot;,
+      &quot;clinvar_build&quot;: &quot;2016-04-09&quot;,
+      &quot;exac&quot;: &quot;2016-04-09&quot;,
+      &quot;cg69&quot;: &quot;2016-04-09&quot;,
+      &quot;esp5400&quot;: &quot;2016-04-09&quot;
+    },
+    &quot;review&quot;: {
+      &quot;ext_id&quot;: &quot;7E3C3BCD8D7869D867055208BD1A0F42&quot;,
+      &quot;in_report&quot;: &quot;0&quot;,
+      &quot;comment&quot;: &quot;this variant is false positive&quot;,
+      &quot;pathogenicity_class&quot;: &quot;A&quot;,
+      &quot;reproted&quot;: &quot;0&quot;,
+      &quot;freq_batch&quot;: &quot;0&quot;,
+      &quot;freq_client&quot;: &quot;0&quot;,
+      &quot;freq_all&quot;: &quot;0&quot;,
+      &quot;freq_all_total&quot;: &quot;0&quot;,
+      &quot;false_positive&quot;: &quot;0&quot;
+    },
+    &quot;experiment&quot;: {
+      &quot;experiment_tytpe&quot;: &quot;126000&quot;,
+      &quot;experimant_user&quot;: &quot;user_0003&quot;
+    }
+  }
+}
+</code></pre>
+
+<pre><code class="language-sh">overview:
+
+    To call variants from aligned short-read sequencing data, supply BAM files and
+    a reference.  FreeBayes will provide VCF output on standard out describing SNPs,
+    indels, and complex variants in samples in the input alignments.
+
+    By default, FreeBayes will consider variants supported by at least 2
+    observations in a single sample (-C) and also by at least 20% of the reads from
+    a single sample (-F).  These settings are suitable to low to high depth
+    sequencing in haploid and diploid samples, but users working with polyploid or
+    pooled samples may wish to adjust them depending on the characteristics of
+    their sequencing data.
+
+    FreeBayes is capable of calling variant haplotypes shorter than a read length
+    where multiple polymorphisms segregate on the same read.  The maximum distance
+    between polymorphisms phased in this way is determined by the
+    --max-complex-gap, which defaults to 3bp.  In practice, this can comfortably be
+    set to half the read length.
+
+    Ploidy may be set to any level (-p), but by default all samples are assumed to
+    be diploid.  FreeBayes can model per-sample and per-region variation in
+    copy-number (-A) using a copy-number variation map.
+
+    FreeBayes can act as a frequency-based pooled caller and describe variants
+    and haplotypes in terms of observation frequency rather than called genotypes.
+    To do so, use --pooled-continuous and set input filters to a suitable level.
+    Allele observation counts will be described by AO and RO fields in the VCF output.
+
+
+examples:
+
+    # call variants assuming a diploid sample
+    freebayes -f ref.fa aln.bam &gt;var.vcf
+
+    # call variants assuming a diploid sample, providing gVCF output
+    freebayes -f ref.fa --gvcf aln.bam &gt;var.gvcf
+
+    # require at least 5 supporting observations to consider a variant
+    freebayes -f ref.fa -C 5 aln.bam &gt;var.vcf
+
+    # use a different ploidy
+    freebayes -f ref.fa -p 4 aln.bam &gt;var.vcf
+
+    # assume a pooled sample with a known number of genome copies
+    freebayes -f ref.fa -p 20 --pooled-discrete aln.bam &gt;var.vcf
+
+    # generate frequency-based calls for all variants passing input thresholds
+    freebayes -f ref.fa -F 0.01 -C 1 --pooled-continuous aln.bam &gt;var.vcf
+
+    # use an input VCF (bgzipped + tabix indexed) to force calls at particular alleles
+    freebayes -f ref.fa -@ in.vcf.gz aln.bam &gt;var.vcf
+
+    # generate long haplotype calls over known variants
+    freebayes -f ref.fa --haplotype-basis-alleles in.vcf.gz \
+                        --haplotype-length 50 aln.bam
+
+    # naive variant calling: simply annotate observation counts of SNPs and indels
+    freebayes -f ref.fa --haplotype-length 0 --min-alternate-count 1 \
+        --min-alternate-fraction 0 --pooled-continuous --report-monomorphic &gt;var.vcf
+
+
+parameters:
+
+   -h --help       Prints this help dialog.
+   --version       Prints the release number and the git commit id.
+
+input:
+
+   -b --bam FILE   Add FILE to the set of BAM files to be analyzed.
+   -L --bam-list FILE
+                   A file containing a list of BAM files to be analyzed.
+   -c --stdin      Read BAM input on stdin.
+   -f --fasta-reference FILE
+                   Use FILE as the reference sequence for analysis.
+                   An index file (FILE.fai) will be created if none exists.
+                   If neither --targets nor --region are specified, FreeBayes
+                   will analyze every position in this reference.
+   -t --targets FILE
+                   Limit analysis to targets listed in the BED-format FILE.
+   -r --region &lt;chrom&gt;:&lt;start_position&gt;-&lt;end_position&gt;
+                   Limit analysis to the specified region, 0-base coordinates,
+                   end_position not included (same as BED format).
+                   Either '-' or '..' maybe used as a separator.
+   -s --samples FILE
+                   Limit analysis to samples listed (one per line) in the FILE.
+                   By default FreeBayes will analyze all samples in its input
+                   BAM files.
+   --populations FILE
+                   Each line of FILE should list a sample and a population which
+                   it is part of.  The population-based bayesian inference model
+                   will then be partitioned on the basis of the populations.
+   -A --cnv-map FILE
+                   Read a copy number map from the BED file FILE, which has
+                   the format:
+                      reference sequence, start, end, sample name, copy number
+                   ... for each region in each sample which does not have the
+                   default copy number as set by --ploidy.
+
+output:
+
+   -v --vcf FILE   Output VCF-format results to FILE. (default: stdout)
+   --gvcf
+                   Write gVCF output, which indicates coverage in uncalled regions.
+   --gvcf-chunk NUM
+                   When writing gVCF output emit a record for every NUM bases.
+   -@ --variant-input VCF
+                   Use variants reported in VCF file as input to the algorithm.
+                   Variants in this file will included in the output even if
+                   there is not enough support in the data to pass input filters.
+   -l --only-use-input-alleles
+                   Only provide variant calls and genotype likelihoods for sites
+                   and alleles which are provided in the VCF input, and provide
+                   output in the VCF for all input alleles, not just those which
+                   have support in the data.
+   --haplotype-basis-alleles VCF
+                   When specified, only variant alleles provided in this input
+                   VCF will be used for the construction of complex or haplotype
+                   alleles.
+   --report-all-haplotype-alleles
+                   At sites where genotypes are made over haplotype alleles,
+                   provide information about all alleles in output, not only
+                   those which are called.
+   --report-monomorphic
+                   Report even loci which appear to be monomorphic, and report all
+                   considered alleles, even those which are not in called genotypes.
+                   Loci which do not have any potential alternates have '.' for ALT.
+   -P --pvar N     Report sites if the probability that there is a polymorphism
+                   at the site is greater than N.  default: 0.0.  Note that post-
+                   filtering is generally recommended over the use of this parameter.
+   --strict-vcf
+                   Generate strict VCF format (FORMAT/GQ will be an int)
+
+population model:
+
+   -T --theta N    The expected mutation rate or pairwise nucleotide diversity
+                   among the population under analysis.  This serves as the
+                   single parameter to the Ewens Sampling Formula prior model
+                   default: 0.001
+   -p --ploidy N   Sets the default ploidy for the analysis to N.  default: 2
+   -J --pooled-discrete
+                   Assume that samples result from pooled sequencing.
+                   Model pooled samples using discrete genotypes across pools.
+                   When using this flag, set --ploidy to the number of
+                   alleles in each sample or use the --cnv-map to define
+                   per-sample ploidy.
+   -K --pooled-continuous
+                   Output all alleles which pass input filters, regardles of
+                   genotyping outcome or model.
+
+reference allele:
+
+   -Z --use-reference-allele
+                   This flag includes the reference allele in the analysis as
+                   if it is another sample from the same population.
+   --reference-quality MQ,BQ
+                   Assign mapping quality of MQ to the reference allele at each
+                   site and base quality of BQ.  default: 100,60
+
+allele scope:
+
+   -I --no-snps    Ignore SNP alleles.
+   -i --no-indels  Ignore insertion and deletion alleles.
+   -X --no-mnps    Ignore multi-nuceotide polymorphisms, MNPs.
+   -u --no-complex Ignore complex events (composites of other classes).
+   -n --use-best-n-alleles N
+                   Evaluate only the best N SNP alleles, ranked by sum of
+                   supporting quality scores.  (Set to 0 to use all; default: all)
+   -E --max-complex-gap N
+      --haplotype-length N
+                   Allow haplotype calls with contiguous embedded matches of up
+                   to this length.  (default: 3)
+   --min-repeat-size N
+                   When assembling observations across repeats, require the total repeat
+                   length at least this many bp.  (default: 5)
+   --min-repeat-entropy N
+                   To detect interrupted repeats, build across sequence until it has
+                   entropy &gt; N bits per bp.  (default: 0, off)
+   --no-partial-observations
+                   Exclude observations which do not fully span the dynamically-determined
+                   detection window.  (default, use all observations, dividing partial
+                   support across matching haplotypes when generating haplotypes.)
+
+indel realignment:
+
+   -O --dont-left-align-indels
+                   Turn off left-alignment of indels, which is enabled by default.
+
+input filters:
+
+   -4 --use-duplicate-reads
+                   Include duplicate-marked alignments in the analysis.
+                   default: exclude duplicates marked as such in alignments
+   -m --min-mapping-quality Q
+                   Exclude alignments from analysis if they have a mapping
+                   quality less than Q.  default: 1
+   -q --min-base-quality Q
+                   Exclude alleles from analysis if their supporting base
+                   quality is less than Q.  default: 0
+   -R --min-supporting-allele-qsum Q
+                   Consider any allele in which the sum of qualities of supporting
+                   observations is at least Q.  default: 0
+   -Y --min-supporting-mapping-qsum Q
+                   Consider any allele in which and the sum of mapping qualities of
+                   supporting reads is at least Q.  default: 0
+   -Q --mismatch-base-quality-threshold Q
+                   Count mismatches toward --read-mismatch-limit if the base
+                   quality of the mismatch is &gt;= Q.  default: 10
+   -U --read-mismatch-limit N
+                   Exclude reads with more than N mismatches where each mismatch
+                   has base quality &gt;= mismatch-base-quality-threshold.
+                   default: ~unbounded
+   -z --read-max-mismatch-fraction N
+                   Exclude reads with more than N [0,1] fraction of mismatches where
+                   each mismatch has base quality &gt;= mismatch-base-quality-threshold
+                   default: 1.0
+   -$ --read-snp-limit N
+                   Exclude reads with more than N base mismatches, ignoring gaps
+                   with quality &gt;= mismatch-base-quality-threshold.
+                   default: ~unbounded
+   -e --read-indel-limit N
+                   Exclude reads with more than N separate gaps.
+                   default: ~unbounded
+   -0 --standard-filters  Use stringent input base and mapping quality filters
+                   Equivalent to -m 30 -q 20 -R 0 -S 0
+   -F --min-alternate-fraction N
+                   Require at least this fraction of observations supporting
+                   an alternate allele within a single individual in the
+                   in order to evaluate the position.  default: 0.2
+   -C --min-alternate-count N
+                   Require at least this count of observations supporting
+                   an alternate allele within a single individual in order
+                   to evaluate the position.  default: 2
+   -3 --min-alternate-qsum N
+                   Require at least this sum of quality of observations supporting
+                   an alternate allele within a single individual in order
+                   to evaluate the position.  default: 0
+   -G --min-alternate-total N
+                   Require at least this count of observations supporting
+                   an alternate allele within the total population in order
+                   to use the allele in analysis.  default: 1
+   --min-coverage N
+                   Require at least this coverage to process a site. default: 0
+   --max-coverage N
+                   Do not process sites with greater than this coverage. default: no limit
+
+population priors:
+
+   -k --no-population-priors
+                   Equivalent to --pooled-discrete --hwe-priors-off and removal of
+                   Ewens Sampling Formula component of priors.
+
+mappability priors:
+
+   -w --hwe-priors-off
+                   Disable estimation of the probability of the combination
+                   arising under HWE given the allele frequency as estimated
+                   by observation frequency.
+   -V --binomial-obs-priors-off
+                   Disable incorporation of prior expectations about observations.
+                   Uses read placement probability, strand balance probability,
+                   and read position (5'-3') probability.
+   -a --allele-balance-priors-off
+                   Disable use of aggregate probability of observation balance between alleles
+                   as a component of the priors.
+
+genotype likelihoods:
+
+   --observation-bias FILE
+                   Read length-dependent allele observation biases from FILE.
+                   The format is [length] [alignment efficiency relative to reference]
+                   where the efficiency is 1 if there is no relative observation bias.
+   --base-quality-cap Q
+                   Limit estimated observation quality by capping base quality at Q.
+   --prob-contamination F
+                   An estimate of contamination to use for all samples.  default: 10e-9
+   --legacy-gls    Use legacy (polybayes equivalent) genotype likelihood calculations
+   --contamination-estimates FILE
+                   A file containing per-sample estimates of contamination, such as
+                   those generated by VerifyBamID.  The format should be:
+                       sample p(read=R|genotype=AR) p(read=A|genotype=AA)
+                   Sample '*' can be used to set default contamination estimates.
+
+algorithmic features:
+
+   --report-genotype-likelihood-max
+                   Report genotypes using the maximum-likelihood estimate provided
+                   from genotype likelihoods.
+   -B --genotyping-max-iterations N
+                   Iterate no more than N times during genotyping step. default: 1000.
+   --genotyping-max-banddepth N
+                   Integrate no deeper than the Nth best genotype by likelihood when
+                   genotyping. default: 6.
+   -W --posterior-integration-limits N,M
+                   Integrate all genotype combinations in our posterior space
+                   which include no more than N samples with their Mth best
+                   data likelihood. default: 1,3.
+   -N --exclude-unobserved-genotypes
+                   Skip sample genotypings for which the sample has no supporting reads.
+   -S --genotype-variant-threshold N
+                   Limit posterior integration to samples where the second-best
+                   genotype likelihood is no more than log(N) from the highest
+                   genotype likelihood for the sample.  default: ~unbounded
+   -j --use-mapping-quality
+                   Use mapping quality of alleles when calculating data likelihoods.
+   -H --harmonic-indel-quality
+                   Use a weighted sum of base qualities around an indel, scaled by the
+                   distance from the indel.  By default use a minimum BQ in flanking sequence.
+   -D --read-dependence-factor N
+                   Incorporate non-independence of reads by scaling successive
+                   observations by this factor during data likelihood
+                   calculations.  default: 0.9
+   -= --genotype-qualities
+                   Calculate the marginal probability of genotypes and report as GQ in
+                   each sample field in the VCF output.
+
+debugging:
+
+   -d --debug      Print debugging output.
+   -dd             Print more verbose debugging output (requires &quot;make DEBUG&quot;)
+
+
+author:   Erik Garrison &lt;erik.garrison@bc.edu&gt;, Marth Lab, Boston College, 2010-2014
+version:  v1.0.2-16-gd466dde
+</code></pre>
+
+<h2 id="running-igv">Running IGV</h2>
+
+<pre><code class="language-#!/bin/sh">$ java -Xmx5g -Xms5g -jar /Applications/IGV_2.3.67.app/Contents/Java/igv.jar
+</code></pre>
+
+<h2 id="region-database">Region Database</h2>
+
+<p>Errors can occur at each stage of data generation:</p>
+
+<ul>
+<li>Library prep</li>
+<li>Sequencing</li>
+<li>Alignment</li>
+</ul>
+
+<p>Information we know about each variant, and how it is useful:</p>
+
+<ul>
+<li>Base Qualities: Low quality indicates sequencing Errors</li>
+<li>Read Positions: Bias indicates mapping issues</li>
+<li>Genomic Strand: Bias indicates mapping issues</li>
+<li>Genomic Position: PCR dupes; self-chain, homopolymers</li>
+<li>Mapping Info: Aligner-dependent quality score/flags</li>
+</ul>
+
+<p>Problematic regions</p>
+
+<ul>
+<li>Many genomic regions are inherently difficult to interpret including homopolymers, simple repeats</li>
+<li>homopolymer_region</li>
+<li>problematic_region</li>
+<li>off_target</li>
+<li>low_variant_fraction</li>
+<li>low_covearge</li>
+</ul>
+
+<pre><code class="language-sh">bcftools annotate -a lcr.bed.gz -h header.hdr -c CHROM,FROM,TO,LCR default.vcf.gz
+</code></pre>
+
+<h2 id="brca1-2-database">BRCA1/2 Database</h2>
+
+<p>Breast Cancer Information Core (BIC), ClinVar, CIMBA(Consortium of Investigators of Modifiers of BRCA1/2), ENIGMA, LOVD, COGR(Canadian Open Genetics Pespository), BRCA Exchange, Clinvitae 등의 BRCA1/2 유전자 데이터에 11,633~16,747개의 BRCA1/2 유전변이에 대한 정보를 포함하고 있다.</p>
+
+<p>Developers contributing to the NIH Big Data to Knowledge Center for Translation Genomics <a href="https://github.com/BD2KGenomics/brca">BD2KGenomics</a>를 참고하여 여러 소스의 데이터를 통합하는 방법을 참고하여 데이터베이스를 구축</p>
+
+<p>데이터베이스를 통합하고 API를 만드는 것은 invitae의 <a href="https://bitbucket.org/invitae/medgen-mysql">medgen-mysql</a>을 참고하여 구축</p>
+
+<p>Sequence 서열에 빠르게 검색하는 것은 <a href="https://github.com/23andMe/seqseek">23andMe</a>의 SeqSeek을 참고</p>
+
+<pre><code class="language-python">from seqseek import Chromosome
+Chromosome(17).sequence(start=141224, end=141244) #=&gt; TTTCCTGAGAGTTCCAGTGA
+</code></pre>
+
+<figure>
+<img src="/images/2016-04-25/s3.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+<figcaption>
+    (위) ClinVar BRCA1/2 genes
+</figcaption>
+</figure>
+
+<h2 id="dbsnp">dbSNP</h2>
+
+<p><a href="ftp://ftp.ncbi.nlm.nih.gov/snp/organisms/human_9606_b146_GRCh37p13/VCF/00-All.vcf.gz">Build 146 of dbSNP using GRCh37p13</a></p>
+
+<h2 id="clinvar">ClinVar</h2>
+
+<p><a href="ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/clinvar_20160405.vcf.gz">ClinVar 20160405</a></p>
+
+<h2 id="snpsift-annotation">SnpSift annotation</h2>
+
+<pre><code class="language-sh">chr13   32890525        .       C       &lt;NON_REF&gt;       .       .       END=32890758    GT:DP:GQ:MIN_DP:PL      0/0:260:99:252:0,120,1800
+chr13   32890525        .       C       .       .       END=32890758    GT:DP:GQ:MIN_DP:PL      0/0:260:99:252:0,120,1800
+</code></pre>
+
+<figure>
+<img src="/images/2016-04-25/s1.png" style="margin-right:auto; margin-left:auto; width:650px;" />
+<figcaption>
+    (위) rs80359391;rs80359392 INDEL
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/2016-04-25/s2.png" style="margin-right:auto; margin-left:auto;  width:650px;" />
+<figcaption>
+    (위) rs60601836;rs397823657 INDEL
+</figcaption>
+</figure>
+
+<p>Clinvar annotation using SnpSift</p>
+
+<pre><code class="language-sh">java -jar SnpSift.jar annotate -v clinvar_20160104.vcf full_variant_sort.vcf
+</code></pre>
+
+<p>BEFORE</p>
+
+<pre><code class="language-sh">17      41276247        chr17:SNP:20    A       G       10000   .       TYPE=SNP;DBXREF=dbSNP:rs3765640,g1000:0.353634,cg69:0.275,clinvar:rs3765640|non-pathogenic;     GT:DP:AD:DP4    1/1:14929:6,14920:6,0,14920,0
+</code></pre>
+
+<p>AFTER</p>
+
+<pre><code class="language-sh">17      41276247        chr17:SNP:20;rs3765640  A       G       10000.0 .       TYPE=SNP;DBXREF=dbSNP:rs3765640,g1000:0.353634,cg69:0.275,clinvar:rs3765640|non-pathogenic;ASP;CAF=0.6464,0.3536;CLNACC=RCV000111495.2;CLNALLE=1;CLNDBN=Breast-ovarian_cancer\x2c_familial_1;CLNDSDB=GeneReviews:MedGen:OMIM:Orphanet;CLNDSDBID=NBK1247:C2676676:604370:ORPHA145;CLNHGVS=NC_000017.10:g.41276247A&gt;G;CLNORIGIN=1;CLNREVSTAT=exp;CLNSIG=2;CLNSRC=Breast_Cancer_Information_Core_(BRCA1);CLNSRCID=101-115&amp;base_change\x3dT_to_C;COMMON=1;G5;G5A;GENEINFO=NBR2:10230|BRCA1:672;GNO;HD;INT;KGPhase1;KGPhase3;LSD;PM;R5;RS=3765640;RSPOS=41276247;RV;SAO=1;SLO;SSR=0;VC=SNV;VLD;VP=0x0501600a000517053f100100;WGT=1;dbSNPBuildID=107  GT:DP:AD:DP4    1/1:14929:6,14920:6,0,14920,0
+</code></pre>
+
+<h2 id="left-alignment">Left Alignment</h2>
+
+<p><a href="https://www.biostars.org/p/66843/">BioStar</a> 헨리흉아의 글 - &ldquo;For NGS analysis, the convention is to left align indels. To use GATK and samtools, you should use an aligner that left aligns indels; otherwise at least samtools will have worse performance and accuracy. It is too late to fix the issue in VCF.&rdquo;</p>
+
+<h2 id="medgen-sql">medgen-sql</h2>
+
+<p>Selct RCV accession</p>
+
+<pre><code class="language-sh">mysql&gt; select * from clinvar_hgvs where RCVaccession='RCV000111495';
++-------------+----------+--------------+----------------------------+
+| VariationID | AlleleID | RCVaccession | hgvs_text                  |
++-------------+----------+--------------+----------------------------+
+|      125468 |   131006 | RCV000111495 | LRG_292t1:c.-19-115T&gt;C     |
+|      125468 |   131006 | RCV000111495 | NM_007298.3:c.-134T&gt;C      |
+|      125468 |   131006 | RCV000111495 | NM_007294.3:c.-19-115T&gt;C   |
+|      125468 |   131006 | RCV000111495 | LRG_292:g.93754T&gt;C         |
+|      125468 |   131006 | RCV000111495 | NG_005905.2:g.93754T&gt;C     |
+|      125468 |   131006 | RCV000111495 | NC_000017.11:g.43124230A&gt;G |
+|      125468 |   131006 | RCV000111495 | NC_000017.10:g.41276247A&gt;G |
+|      125468 |   131006 | RCV000111495 | U14680.1:n.101-115T&gt;C      |
++-------------+----------+--------------+----------------------------+
+8 rows in set (0.00 sec)
+</code></pre>
+
+<p>Select Allele description</p>
+
+<pre><code class="language-sh">mysql&gt; select * from variant_summary where AlleleID='131006';
++----------+---------------------------+---------------------------------+--------+--------+----------------------+---------+-----------+--------------+-------------+-----------------------------+----------+----------+------------+----------+----------+-------------+--------------------------+--------------------------+--------+------------------+---------------+------------+--------------------------------------------------------------------+-------------+
+| AlleleID | variant_type              | variant_name                    | GeneID | Symbol | ClinicalSignificance | rs      | dbvar_nsv | RCVaccession | TestedInGTR | PhenotypeIDs                | Origin   | Assembly | Chromosome | Start    | Stop     | Cytogenetic | ReviewStatus             | HGVS_c                   | HGVS_p | NumberSubmitters | LastEvaluated | Guidelines | OtherIDs                                                           | VariationID |
++----------+---------------------------+---------------------------------+--------+--------+----------------------+---------+-----------+--------------+-------------+-----------------------------+----------+----------+------------+----------+----------+-------------+--------------------------+--------------------------+--------+------------------+---------------+------------+--------------------------------------------------------------------+-------------+
+|   131006 | single nucleotide variant | NM_007294.3(BRCA1):c.-19-115T&gt;C |    672 | BRCA1  | Benign               | 3765640 | -         | RCV000111495 | N           | MedGen:C2676676,OMIM:604370 | germline | GRCh38   | 17         | 43124230 | 43124230 | 17q21.31    | reviewed by expert panel | NM_007294.3:c.-19-115T&gt;C |        |                2 | Jan 12, 2015  | -          | Breast Cancer Information Core  (BRCA1):101-115&amp;base_change=T to C |      125468 |
+|   131006 | single nucleotide variant | NM_007294.3(BRCA1):c.-19-115T&gt;C |    672 | BRCA1  | Benign               | 3765640 | -         | RCV000111495 | N           | MedGen:C2676676,OMIM:604370 | germline | GRCh37   | 17         | 41276247 | 41276247 | 17q21.31    | reviewed by expert panel | NM_007294.3:c.-19-115T&gt;C |        |                2 | Jan 12, 2015  | -          | Breast Cancer Information Core  (BRCA1):101-115&amp;base_change=T to C |      125468 |
++----------+---------------------------+---------------------------------+--------+--------+----------------------+---------+-----------+--------------+-------------+-----------------------------+----------+----------+------------+----------+----------+-------------+--------------------------+--------------------------+--------+------------------+---------------+------------+--------------------------------------------------------------------+-------------+
+2 rows in set (0.01 sec)
+</code></pre>
+
+<h2 id="transvar">Transvar</h2>
+
+<p><a href="https://bitbucket.org/wanding/transvar">Transvar</a>is a versatile annotator for 3-way conversion and annotation among genomic characterization(s) of mutations (e.g., chr3:g.178936091G&gt;A) and transcript-dependent annotation(s) (e.g., PIK3CA:p.E545K or PIK3CA:c.1633G&gt;A, or NM_006218.2:p.E545K, or NP_006266.2:p.G240Afs*50).</p>
+
+<ul>
+<li>Forward Annotation: gDNA (chr3:g.178936091G&gt;A, chr10:g.52595929_52595930delinsAA, chr2:g.234183368_234183380del, chr3:g.178936091_178936192insGT)</li>
+<li>Reverse Annotation: cDNA (PIK3CA:c.1633G&gt;A, A1CF:c.508_509delinsTT, A4GNT:c.694_696delTTG)</li>
+<li>Reverse Annotation: Protein (DHODH:p.G152R, NP_006266.2:p.G240Afs*50, NP_006209:p.E545K, AADACL4:p.W263_I267delWRDA)</li>
+</ul>
+
+<pre><code class="language-sh">$ transvar panno -i 'PIK3CA:p.E545K' --ucsc --ccds
+input	transcript	gene	strand	coordinates(gDNA/cDNA/protein)	region	info
+PIK3CA:p.E545K	NM_006218 (protein_coding)	PIK3CA	+	chr3:g.178936091G&gt;A/c.1633G&gt;A/p.E545K	cds_in_exon_10	reference_codon=GAG;candidate_codons=AAG,AAA;candidate_mnv_variants=chr3:g.178936091_178936093delGAGinsAAA;missense;source=UCSCRefGene
+PIK3CA:p.E545K	CCDS43171 (protein_coding)	PIK3CA	+	chr3:g.178936091G&gt;A/c.1633G&gt;A/p.E545K	cds_in_exon_9	reference_codon=GAG;candidate_codons=AAG,AAA;candidate_mnv_variants=chr3:g.178936091_178936093delGAGinsAAA;missense;source=CCDS
+</code></pre>
+
+<p>final annotation format using sophia genetics pipeline</p>
+
+<pre><code class="language-sh">13      32890572        rs1799943       G       A       .       .       TYPE=SNP;DBXREF=dbSNP:rs1799943,g1000:0.209265,esp5400:0.207752370329057,cg69:0.1    81,ExAC:0.243,clinvar:rs1799943|non-pathogenic,untested;RS=RS=1799943;RSPOS=32890572;dbSNPBuildID=89;SSR=0;SAO=3;VP=0x05016840000515053f110104;GENEINFO=B    RCA2:675;WGT=1;VC=SNV;PM;PMC;SLO;U5;ASP;VLD;G5;HD;GNO;KGPhase1;KGPhase3;LSD;OM;NOV;CLNALLE=1,2,3;CLNHGVS=NC_000013.10:g.32890572G&gt;A,NC_000013.10:g.328905    72G&gt;C,NC_000013.10:g.32890572G&gt;T;CLNSRC=Breast_Cancer_Information_Core_(BRCA2),Breast_Cancer_Information_Core_(BRCA2),Breast_Cancer_Information_Core_(BRC    A2);CLNORIGIN=3,1,1;CLNSRCID=203&amp;base_change\x3dG_to_A,203&amp;base_change\x3dG_to_C,203&amp;base_change\x3dG_to_T;CLNSIG=2|1,2,2;CLNDSDB=GeneReviews:MedGen:OMIM    :Orphanet|GeneReviews:MedGen:OMIM:SNOMED_CT,GeneReviews:MedGen:OMIM:Orphanet,GeneReviews:MedGen:OMIM:Orphanet;CLNDSDBID=NBK1247:C2675520:612555:ORPHA145|    NBK1247:C0346153:114480:254843006,NBK1247:C2675520:612555:ORPHA145,NBK1247:C2675520:612555:ORPHA145;CLNDBN=Breast-ovarian_cancer\x2c_familial_2|Familial_    cancer_of_breast,Breast-ovarian_cancer\x2c_familial_2,Breast-ovarian_cancer\x2c_familial_2;CLNREVSTAT=exp|no_assertion,no_criteria,no_criteria;CLNACC=RCV    000112977.3|RCV000114981.1,RCV000112978.1,RCV000112979.1;CAF=0.7907,0.2093,.,.;COMMON=1 GT:DP:AD:DP4    0/1:8033:3938,4094:3938,0,4094,0
+</code></pre>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="/blog/2016-09-13-hgvs/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="/blog/2019-05-07-pcgr/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2016. Changbum Hong.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Changbum Hong</title>
+
+<meta name="generator" content="Hugo 0.55.5" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+<header class="row text-center header">
+   <img src="/img/hongiiv2.png" alt="Author Image" class="img-circle text-center headshot"> 
+  <h1 class="author">Changbum Hong</h1>
+</header>
+
+<section id="info-pane" class="row text-center info">
+  
+  <h3 class="intro">Software engineer for cancer research  Seoul, Korea.</h3>
+  
+  
+  <h4 class="description">Cancer data science, clinical bioinformatics, DNA variation, precision oncology</h4>
+  
+</section>
+
+<section id="social-pane" class="row text-center social">
+  
+  <a href="https://twitter.com/hongiiv" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  <a href="https://facebook.com/hongiiv" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://github.com/hongiiv" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://instagram.com/hongiiv" aria-label="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/hongiiv" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="mailto:hongiiv@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  
+  
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Changbum Hong",
+  "url": "",
+  "sameAs": [
+    "https://twitter.com/hongiiv",
+    
+    
+    
+    "https://facebook.com/hongiiv",
+    "https://github.com/hongiiv",
+    "https://instagram.com/hongiiv",
+    "https://linkedin.com/in/hongiiv",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ,
+    ""
+  ]
+}
+</script>
+
+
+
+<header class="row text-left title">
+  <div align='center'><h3 class="title">엔젠바이오 워크플로우 살펴보기</h3></div>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta tcenter">
+        PUBLISHED ON MAY 5, 2019 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h2 id="워크플로우-시스템-설치">워크플로우 시스템 설치</h2>
+
+<pre><code class="language-sh">apt-get install git
+mkdir /NAS
+cd /NAS
+git clone https://github.com/ngenebio/workflow.git
+EDIT workflow/utility_scripts/analysis_build.sh
+EDIT workflow/ngb_workflow/settings.py
+bash workflow/utility_scripts/analysis_build.sh
+</code></pre>
+
+<p>analysis_build.sh는 ANALYSIS_HOME, SCRIPT_HOME, DEPENDENCIES, ANALYSIS_TEMP가 고정된 형태로 setting.py와 동일하도록 수정한 후 analysis_build.sh를 실행한다.</p>
+
+<ul>
+<li>ANALYSIS_HOME: 분석결과가 저장되는 디렉토리</li>
+<li>SCRIPT_HOME: 워크플로우 시스템의 홈디렉토리</li>
+<li>DEPENDENCIES: 워크플로우에서 사용되는 reference 파일 디렉토리</li>
+<li>ANALYSIS_TEMP: 워크플로우에서 사용되는 temporary 디렉토리</li>
+</ul>
+
+<pre><code class="language-sh">NAS
+  |-workflow_out
+  |-workflow
+  |-workflow-dependencies
+  |-workflow-temp
+</code></pre>
+
+<h2 id="파이프라인-테스트하기">파이프라인 테스트하기</h2>
+
+<p>파이프라인을 실행하기 위해서는 특정 output 디렉토리에 workflow.config.1 형태의 설정파일과 설정파일에 기입된 FASTQ 파일이 존재해야 한다. 위의 디렉토리와 설정파일을 자동으로 만들어주는 스크립트인 run.sh를 실행하거나, submit_sample.py를 통해 테스트가 가능하다.</p>
+
+<pre><code class="language-sh">submit_sample.py [upload_directory] [job_id] [pipeline] [sample_count*2]
+</code></pre>
+
+<pre><code class="language-sh">source ~/.bashrc
+cd workflow/ngb_workflow/daemon
+python watchdaemon.py start &amp;
+cd /NAS
+cd workflow/ngb_workflow/tests
+python submit_sample.py experiment_test 1000 999 4
+qstat
+job-ID  prior   name       user         state submit/start at     queue                          slots ja-task-ID
+-----------------------------------------------------------------------------------------------------------------
+      2 0.50000 w_1000     root         r     04/20/2016 09:16:34 all.q@hongiiv-dev                  4 1
+      2 0.50000 w_1000     root         r     04/20/2016 09:16:34 all.q@hongiiv-dev                  4 2
+cd /NAS
+cd workflow_out/1000
+ls -al
+total 52
+drwxrwxrwx 2 root root 4096 Apr 20 09:16 ./
+drwxr-xr-x 4 root root 4096 Apr 20 09:16 ../
+-rw-r--r-- 1 root root  355 Apr 20 09:16 1.1000.log.stderr.txt
+-rw-r--r-- 1 root root  355 Apr 20 09:16 2.1000.log.stderr.txt
+-rw-r--r-- 1 root root   32 Apr 20 09:16 completed.1
+-rw-r--r-- 1 root root   32 Apr 20 09:16 completed.2
+lrwxrwxrwx 1 root root   55 Apr 20 09:16 sample1_R1.fastq.gz -&gt; /SEQDATA/AppUploads/experiment_test/sample1_R1.fastq.gz
+lrwxrwxrwx 1 root root   55 Apr 20 09:16 sample1_R2.fastq.gz -&gt; /SEQDATA/AppUploads/experiment_test/sample1_R2.fastq.gz
+lrwxrwxrwx 1 root root   55 Apr 20 09:16 sample2_R1.fastq.gz -&gt; /SEQDATA/AppUploads/experiment_test/sample2_R1.fastq.gz
+lrwxrwxrwx 1 root root   55 Apr 20 09:16 sample2_R2.fastq.gz -&gt; /SEQDATA/AppUploads/experiment_test/sample2_R2.fastq.gz
+-rw------- 1 root root   86 Apr 20 09:16 tmpjr28ye.txt
+-rw------- 1 root root   86 Apr 20 09:16 tmpLtxgwH.txt
+-rw-r--r-- 1 root root  513 Apr 20 09:16 w_1000.o2.1
+-rw-r--r-- 1 root root  775 Apr 20 09:16 w_1000.o2.2
+-rw-rw-rw- 1 root root 1090 Apr 20 09:16 workflow.config.1
+-rw-rw-rw- 1 root root 1090 Apr 20 09:16 workflow.config.2
+-rw-rw-rw- 1 root root  338 Apr 20 09:16 workflow.sge
+</code></pre>
+
+<h2 id="broad-파이프라인을-이용한-사용자-데이터-분석">Broad 파이프라인을 이용한 사용자 데이터 분석</h2>
+
+<p>Broad 파이프라인을 이용한 사용자 데이터 분석</p>
+
+<h2 id="파이프라인-표준-output">파이프라인 표준 OUTPUT</h2>
+
+<p>Broad 파이프라인을 기준으로 설명</p>
+
+<h2 id="사용자-커스텀-파이프라인-만들기">사용자 커스텀 파이프라인 만들기</h2>
+
+<p>사용자 커스텀 파이프라인 만들기에 대한 설명</p>
+
+<h2 id="프로젝트-디렉토리-구조">프로젝트 디렉토리 구조</h2>
+
+<pre><code class="language-sh">NAS
+  |-workflow
+     |-ngb_automate
+     |-ngb_software
+     |-reference_dependencies
+     |-ngb_workflow
+     |     |-setting.py    
+     |     |-whereistools.sh
+     |     |-workflow_wrapper.py
+     |     |-master_workflow.py
+     |     |-modules/bash
+     |           |-validate.sh
+     |           |-timeout.sh
+     |           |-whereissoftware.sh
+     |     |-shared_scripts
+     |     |-test
+     |     |-utils
+     |           |-logging.py     
+     |     |-workflows
+     |           |-app_test.sh
+     |           |-tuxedo.sh
+     |-utility_scripts
+     |     |-analysis_build.sh     
+     |-vcf_evaluate
+</code></pre>
+
+<h2 id="파이프라인-구조">파이프라인 구조</h2>
+
+<p>파이프라인은 <code>workflow/workflows</code> 디렉토리에 존재합니다. 원래 우리가 사용하는 workflow와 pipeline의 정의에 따르면 이 디렉토리명은  <code>pipelines</code>라는 디렉토리명이 맞습니다.</p>
+
+<h2 id="job-submit">Job Submit</h2>
+
+<pre><code class="language-sh">#!/bin/bash
+#$ -N w_1002
+#$ -cwd
+#$ -pe make 5
+#$ -j y
+#$ -t 1-2
+#$ -S /bin/bash
+export PYTHONPATH=/NAS/workflow:/NAS/workflow/ngb_workflow:/NAS/workflow/vcf_evaluate
+export PATH=/NAS/workflow/ngb_workflow:/BIO/app/bowtie2-2.2.6:$PATH
+python /NAS/workflow/ngb_workflow/workflow_wrapper.py sge_taskid=$SGE_TASK_ID job_count=2 job_id=1002
+</code></pre>
+
+<h2 id="파이프라인의-시작-master-workflow-py">파이프라인의 시작 master_workflow.py</h2>
+
+<p>파이프라인이 구동되기 위한 설정정보를 넘겨주기위한 메소드를 작성한다. tuxedo 파이프라인을 실행하기 위해서 texedo.sh를 만들기전에 tuxedo.sh는 다음의 사항들을 입력받아야 한다.</p>
+
+<ul>
+<li>샘플이름: output 파일명을 위해서 필요</li>
+<li>fastq 파일</li>
+<li>output 디렉토리명</li>
+</ul>
+
+<p>위의 사항들은 master_workflow를 통해서 전달 받아야 한다.</p>
+
+<pre><code class="language-python">def run_tuxedo(config, sample_lines, output_dir):
+   &quot;&quot;&quot;
+   Run the RNA-seq tuxedo protocol
+   &quot;&quot;&quot;
+   log_progress(__modname__, 'Run the RNA-seq tuxedo protocol...', file_handle=config['STDERR_FH'])
+   # Extract SAMPLE Name(r1_sample_name) and SAMPLE full path(fastq_r1_name) from sample_lines
+   fastq_r1_name = sample_lines[0].rstrip().split()[0]
+   for l in sample_lines:
+      r1_sample_name = os.path.splitext(l.replace(&quot;_1.fq.gz&quot;,&quot;&quot;).split()[0])[0]
+      r1_sample_name = r1_sample_name.split(&quot;/&quot;)[-1]
+      #r1_sample_name = r1_sample_name.split(&quot;_&quot;)[0]
+      sample_name_line = 'SAMPLE_NAME\t{0}\n'.format(r1_sample_name)
+   #fastq_r1_raw = get_sample_from_filename(fastq_r1_name) + &quot;.fastq&quot;
+
+   # TODO: change script file path
+   exec_point = join(settings.SCRIPT_HOME, &quot;workflows&quot;, &quot;tuxedo.sh&quot;)
+   exec_cmd = [exec_point,'-i', r1_sample_name, '-d', config['SAMPLE_DIRECTORY'], '-o', config['OUTPUT_DIRECTORY']]
+   log_cmd(__modname__, exec_cmd, file_handle=config['STDERR_FH'])
+   retcode = logging_subprocess_call(exec_cmd,stderr_fh=config['STDERR_FH'])
+   if retcode != 0:
+      handle_workflow_failure(config, 'run_tuxedo_workflow', retcode)
+</code></pre>
+
+<p>실제 config 파일에서 tuxedo 파이프라인이 선택되어졌다면, run_tuxedo를 실행한다.</p>
+
+<pre><code class="language-python">   # RNA-seq workflow
+   if workflows['run_tuxedo']:
+      run_tuxedo(config_opts, sample_lines, output_dir)
+</code></pre>
+
+<h2 id="로그-남기기">로그 남기기</h2>
+
+<p>progress 로그</p>
+
+<pre><code class="language-python">from ngb_workflow.utils.logging import log_info, log_warning, log_error, log_progress, log_cmd
+log_progress(__modname__, 'Run the app test script', file_handle=config['STDERR_FH'])
+</code></pre>
+
+<p>실제 로그</p>
+
+<pre><code class="language-sh">[10:29:56] master_workflow.py [PROGRESS] &gt; Run the app test script
+</code></pre>
+
+<p>파이프라인의 bash에서 사용하는 로그는 validate.sh 파일에 정의되어 있습니다. 따라서 파이프라인에서 사용하는 bash 파일에는 다음의 3라인을 추가하여 사용합니다.</p>
+
+<pre><code class="language-bash">dir=`whereistools.sh`
+source $dir/modules/bash/validate.sh
+source $dir/modules/bash/whereissoftware.sh
+
+log_progress &quot;Step1 tophat alignment already complete!!!&quot;
+</code></pre>
+
+<pre><code class="language-bash">log()
+{
+   message=$@
+   echo -e &quot;[$(timestamp)] &quot;`script_name`&quot; [&quot;$message &gt;&gt; /dev/stderr
+}
+
+log_checkpoint()
+{
+   log &quot;CHECKPOINT] &gt; $1&quot;
+}
+
+log_progress()
+{
+   log &quot;PROGRESS] &gt; $1&quot;
+}
+
+log_error()
+{
+   log &quot;ERROR] &gt; $1&quot;
+}
+
+log_cmd()
+{
+   log &quot;CMD] &gt; $1&quot;
+}
+</code></pre>
+
+<h2 id="사용-가능한-파이프라인-목록">사용 가능한 파이프라인 목록</h2>
+
+<ul>
+<li><strong>vcf_to_gwas</strong> gatk로 부터 생산된 vcf 파일을 plink 포맷으로 변환 후 ibs, mds, pca 분석과 plot을 생성</li>
+<li><strong>tuxedo</strong> fastq로부터 tophat&ndash;&gt;cuffdiff&ndash;&gt;cummeRbund에 이르는 tuxedo 파이프라인을 실행</li>
+<li><strong>merge_htseqcount</strong> ht-seqcout를 이용하여 RNA-seq의 read를 count한 결과를 R에서 사용하기 위해 table 형태의 포맷으로 변환</li>
+<li><strong>visual_rna</strong> merge_htseqcount를 통해 변환된 reads count를 입력받아 DESeq 패키지를 이용하여 DE 분석 수행</li>
+<li><strong>app_test</strong> 분석을 위해 필요한 application 들을 테스트하는 파이프라인 (999)</li>
+</ul>
+
+<h2 id="파이프라인-설정-파일">파이프라인 설정 파일</h2>
+
+<p>Workflow를 실행하기 위한 설정 파일로 각 workfolow마다 고유한 configuration을 갖는다.</p>
+
+<ul>
+<li><strong>OUTPUT_DIRECTORY</strong> workfow의 결과물들이 생성되는 위치</li>
+<li><strong>GUIDE_FILE</strong> merge_htseqcout 수행시 htseqcount의 결과 파일의 위치와 샘플이름이 지정된 파일의 위치</li>
+<li><strong>GUIDE_OUT</strong> merge_htseqcout의 결과가 저장될 위치</li>
+<li><strong>SAMPLE1</strong> tuxedo 수행시 case sample의 이름</li>
+<li><strong>SAMPLE2</strong> tuxedo 수행시 control sample의 이름</li>
+<li><strong>SAMPLE_NO</strong> tuxedo 수행시 샘플의 번호</li>
+<li><strong>RNA_DESEQ</strong> merge_htseqcount, tuxedo, visual_rna 를 수행</li>
+<li><strong>VCF_GWAS</strong> vcf_to_gwas를 수행</li>
+<li><strong>APP_TEST</strong> Pipeline Application Test 를 수행</li>
+</ul>
+
+<h2 id="파이프라인-실행">파이프라인 실행</h2>
+
+<ul>
+<li><strong>Name of Analysis</strong></li>
+<li><strong>FASTQ Files</strong> Select the de-mulitplexed FASTQ files for one or more samples. Either select uncompressed (.fastq) or compressed (.fastq.gz) files. For paired-end libraries select both the R1 and R2 files</li>
+<li><strong>RNA Analysis Types</strong></li>
+<li><strong>DNA Analysis Type</strong></li>
+<li><strong>Platform</strong></li>
+<li><strong>Target Region</strong></li>
+</ul>
+
+<h2 id="파이프라인-실행하기">파이프라인 실행하기</h2>
+
+<ul>
+<li>workflow.config.1</li>
+<li>workflow.config.2</li>
+<li>rna_sample_sheet.tsv</li>
+<li>cnv_sample_sheet.tsv</li>
+<li>run.qsub</li>
+</ul>
+
+<pre><code class="language-sh">qsub -pe make 5 -cwd -j y -l hostname=bioworker8 -t 1,2 run.qsub
+</code></pre>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="/blog/2016-04-21-string-search/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2016. Changbum Hong.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

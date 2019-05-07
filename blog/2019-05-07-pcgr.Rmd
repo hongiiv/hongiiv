@@ -1,0 +1,29 @@
+---
+title: "Somatic Variants Interpretation"
+author: hongiiv
+author-email: hongiiv@gmail.com
+description: Somatic variant의 interpretation에 대해서 설명합니다.
+publish: true
+output: html_document
+date: 2019-05-07T08:38:37+09:00
+---
+
+```{r setup, include=FALSE}
+
+```
+
+<p>I am a software engineer working in [NGeneBio](http://www.ngenebio.com) in Seoul, Korea. Most of my activities involve cancer data science, i.e. analysis of data from high-throughput molecular profiling of tumor samples. </p>
+
+<p>Main ongoing research activities:
+
+   * Cancer genome interpretation
+
+   * NGS Analysis pipeline
+
+   * Clinical software developement
+
+   * Cloud computing
+
+<br>
+
+</p>

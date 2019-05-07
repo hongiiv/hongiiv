@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on Changbum Hong</title>
+    <link>/tags/hardware/</link>
+    <description>Recent content in hardware on Changbum Hong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 15:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>데이터 과학을 위한 통계</title>
+      <link>/blog/first/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>/blog/first/</guid>
+      <description>Note: This article originally appeared in CodeRag.
+통계 기법은 데이터 과학의 핵심이지만, 전공자가 아닌 이상 정식으로 통계를 공부하고 데이터 과학에 입문하는 사람은 찾기 어렵다.
+ 탐색적 데이터 분석이 핵심 단계인 이유 임의표집으로 편향을 줄이고 고품질의 데이터셋 얻는 법 실험계획법 원칙을 적용해 질문에 명확히 답하기 회귀분석으로 결과를 추정하고 이상 검출하기  </description>
+    </item>
+    
+  </channel>
+</rss>
