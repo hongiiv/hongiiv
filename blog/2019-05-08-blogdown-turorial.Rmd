@@ -1,0 +1,16 @@
+--- 
+title: "Blogdown Turorial"
+date: 2019-05-08T07:23:15+09:00
+
+draft: false 
+comments: false 
+slug: "" 
+tags: ['R','blogdown']
+categories: ['R']
+
+showpagemeta: false
+showcomments: false
+---
+
+This is my first post for my new weblog.
+^__^

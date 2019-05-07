@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Changbum Hong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 07 May 2019 15:59:13 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 07:23:15 +0900</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blogdown Turorial</title>
+      <link>/blog/2019-05-08-blogdown-turorial/</link>
+      <pubDate>Wed, 08 May 2019 07:23:15 +0900</pubDate>
+      
+      <guid>/blog/2019-05-08-blogdown-turorial/</guid>
+      <description>This is my first post for my new weblog. ^__^</description>
+    </item>
     
     <item>
       <title>Somatic variant interpretation</title>
