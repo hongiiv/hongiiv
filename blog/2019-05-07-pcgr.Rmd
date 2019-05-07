@@ -1,16 +1,26 @@
 ---
-title: "Somatic Variants Interpretation"
-author: hongiiv
-author-email: hongiiv@gmail.com
-description: Somatic variant의 interpretation에 대해서 설명합니다.
-publish: true
-output: html_document
-date: 2019-05-07T08:38:37+09:00
+categories: ["precision medicine"]
+comments: false
+date: "2019-05-07T15:59:13-04:00"
+draft: false
+showpagemeta: true
+showcomments: true
+slug: ""
+tags: ["somatic","cancer","interpretation"]
+title: "Somatic variant interpretation"
+description: "Somatic variant interpretation"
+
 ---
 
-```{r setup, include=FALSE}
+</p>
+```{r publication_word_cloud, chunk-label, fig.height=4, echo = F, message=FALSE, warning=FALSE}
+
+plot(cars)
+
+search()
 
 ```
+
 
 <p>I am a software engineer working in [NGeneBio](http://www.ngenebio.com) in Seoul, Korea. Most of my activities involve cancer data science, i.e. analysis of data from high-throughput molecular profiling of tumor samples. </p>
 

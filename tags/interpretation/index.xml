@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interpretation on Changbum Hong</title>
+    <link>/tags/interpretation/</link>
+    <description>Recent content in interpretation on Changbum Hong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 07 May 2019 15:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/interpretation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Somatic variant interpretation</title>
+      <link>/blog/2019-05-07-pcgr/</link>
+      <pubDate>Tue, 07 May 2019 15:59:13 -0400</pubDate>
+      
+      <guid>/blog/2019-05-07-pcgr/</guid>
+      <description>## [1] &amp;quot;.GlobalEnv&amp;quot; &amp;quot;package:stats&amp;quot; &amp;quot;package:graphics&amp;quot; ## [4] &amp;quot;package:grDevices&amp;quot; &amp;quot;package:utils&amp;quot; &amp;quot;package:datasets&amp;quot; ## [7] &amp;quot;package:methods&amp;quot; &amp;quot;Autoloads&amp;quot; &amp;quot;package:base&amp;quot;  I am a software engineer working in NGeneBio in Seoul, Korea. Most of my activities involve cancer data science, i.e. analysis of data from high-throughput molecular profiling of tumor samples.  Main ongoing research activities:
+ Cancer genome interpretation
+ NGS Analysis pipeline
+ Clinical software developement
+ Cloud computing</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ad on Changbum Hong</title>
-    <link>/categories/ad/</link>
-    <description>Recent content in ad on Changbum Hong</description>
+    <title>search on Changbum Hong</title>
+    <link>/tags/search/</link>
+    <description>Recent content in search on Changbum Hong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 02 Oct 2016 15:59:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 15:59:13 -0400</lastBuildDate>
     
-	<atom:link href="/categories/ad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/search/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Gavin Belson</title>
+      <title>여러개의 단어 동시 찾기</title>
       <link>/blog/2016-04-21-string-search/</link>
-      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      <pubDate>Tue, 07 May 2019 15:59:13 -0400</pubDate>
       
       <guid>/blog/2016-04-21-string-search/</guid>
       <description>Aho-Corasick &amp;ldquo;긴 문자열에서 여러 개의 단어를 동시에 찾을 때 선형 시간복잡도 (이론상 최소)를 가지는 알고리즘. Trie 기반의 자료구조에, KMP 알고리즘처럼 실패했을 경우 어디까지 건너뛰어야 할지 알려주는 장치를 만들었다.&amp;rdquo;
